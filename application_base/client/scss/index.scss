@@ -1,0 +1,22 @@
+//Global properties
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+//Abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+//Containers
+@import 'containers/navigation';
+@import 'icons/burger';
+
+
+
+
+

@@ -25,3 +25,20 @@ Informatii de contact.
 Cream o baza de date cu informatii/ camere/apartmanente disponibile, trimite si primesti informatia de la noile rezervari cand cineva completeaza un formular.
 Sincronizare cu un tabel care va afisat pe site.
 Designul principal va fi pentru mobil, el fiind totodata si adaptabil la marimea paginii.
+
+
+
+
+
+
+What to think
+-Name for application: AirULBS
+-LOGO for the name->
+-Title: New Year's Eve Vacation
+
+
+-Adding SASS functionality
+*****
+_creating variables for properties
+_creating breakpoints using in media querries   
+_HOW TO CREATE A BURGER MENU

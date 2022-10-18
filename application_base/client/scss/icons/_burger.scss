@@ -1,0 +1,16 @@
+.icon {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    @include breakpoint(mobile) {
+        display: block;
+        right: 10px;
+        top: 10px;
+    }
+
+    @include breakpoint(tablet) {
+        display: block;
+    }
+}

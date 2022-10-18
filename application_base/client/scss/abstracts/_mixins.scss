@@ -1,0 +1,24 @@
+//Breakpoints
+$mobile: 320px;
+$tablet: 595px;
+$desktop: 1080px;
+
+
+
+//Creating the variables:
+@mixin breakpoint($point) {
+    //for mobile layouts
+    @if $point == mobile {
+        @media (min-width: $mobile) and (max-width: $tablet) { @content; }
+    }
+
+    //for tablets layout
+    @if $point == tablet {
+        @media (min-width: $tablet) and (max-width: $desktop) { @content; }
+    }
+    
+    //for desktop or large layouts
+    @if $point == desktop {
+        @media (min-width: $desktop) { @content; }
+    }
+}
