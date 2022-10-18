@@ -47,11 +47,25 @@ https://fontawesome.com/icons/bars?s=solid&f=classic
 _Adding SASS functionality
 _creating variables for properties
 _creating breakpoints using in media querries   
+_animations
 https://sass-lang.com/documentation/modules/math
 https://www.educative.io/answers/how-to-use-sass-in-your-html-code
+https://www.w3schools.com/css/css3_animations.asp
 
 
 -How to create a BURGER MENU
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
 
 
+-Import/Export JavaScript files
+https://javascript.info/import-export
+https://stackoverflow.com/questions/58211880/uncaught-syntaxerror-cannot-use-import-statement-outside-a-module-when-import
+
+
+-localStorage/sessionStorage/cookies
+https://www.folkstalk.com/2022/09/how-to-store-and-get-a-single-variable-in-local-storage-js-with-code-examples.html
+
+
+-storing data in JSON files 
+https://stackoverflow.com/questions/15365589/how-to-store-data-in-json-object
+https://www.w3schools.com/js/js_json_intro.asp

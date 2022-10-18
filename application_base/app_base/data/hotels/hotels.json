@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Royal Lancaster",
+        "stars": "*****",
+        "lcoation": "London",
+        "image1": "/application_base/images/hotels/budapest/1.jpg",
+        "image2": "/application_base/images/hotels/budapest/1.jpg",
+        "image3": "/application_base/images/hotels/budapest/1.jpg",
+        "image4": "/application_base/images/hotels/budapest/1.jpg"
+    },
+    {
+        "name": "Intercontinental",
+        "stars": "*****",
+        "lcoation": "Budapest",
+        "image1": "/application_base/images/hotels/budapest/1.jpg",
+        "image2": "/application_base/images/hotels/budapest/1.jpg",
+        "image3": "/application_base/images/hotels/budapest/1.jpg",
+        "image4": "/application_base/images/hotels/budapest/1.jpg"
+    },
+    {
+        "name": "Schlosshotel",
+        "stars": "*****",
+        "lcoation": "Berlin",
+        "image1": "/application_base/images/hotels/budapest/1.jpg",
+        "image2": "/application_base/images/hotels/budapest/1.jpg",
+        "image3": "/application_base/images/hotels/budapest/1.jpg",
+        "image4": "/application_base/images/hotels/budapest/1.jpg"
+    },
+    {
+        "name": "Adlon Kempinski",
+        "stars": "*****",
+        "lcoation": "Amsterdam",
+        "image1": "/application_base/images/hotels/budapest/1.jpg",
+        "image2": "/application_base/images/hotels/budapest/1.jpg",
+        "image3": "/application_base/images/hotels/budapest/1.jpg",
+        "image4": "/application_base/images/hotels/budapest/1.jpg"
+    }
+]
