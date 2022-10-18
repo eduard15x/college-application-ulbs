@@ -1,5 +1,4 @@
 //Global properties
-
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -13,8 +12,10 @@
 @import 'abstracts/variables';
 
 //Containers
+@import 'containers/header';
 @import 'containers/navigation';
 @import 'icons/burger';
+@import 'containers/footer';
 
 
 

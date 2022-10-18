@@ -1,0 +1,50 @@
+.container-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: $foote-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+
+    &__logo {
+        color: $footer-text;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 12px;
+
+        &:hover {
+            color: $footer-text-hover;
+        }
+    }
+
+
+    &__informations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 6px 0px 12px;
+        color: $footer-text;
+
+        &--contact,
+        &--contact a {
+            margin: 6px;
+            color: $footer-text;
+            font-weight: bold;
+
+            &:hover {
+                color: $footer-text-hover;
+            }
+        }
+    }
+
+
+
+
+    &__copyright {
+        color: $footer-text;
+    }
+}

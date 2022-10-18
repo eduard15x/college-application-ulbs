@@ -29,7 +29,8 @@ Designul principal va fi pentru mobil, el fiind totodata si adaptabil la marimea
 
 
 
-
+-Using a version control system GITHUB to upload the code 
+https://docs.github.com/en/get-started/quickstart/github-flow
 
 What to think
 -Name for application: AirULBS
@@ -37,8 +38,20 @@ What to think
 -Title: New Year's Eve Vacation
 
 
--Adding SASS functionality
-*****
+-Adding ICONS to project 
+_creating a link to connect with Font Awesome site and adding in the <head> of the project
+https://fontawesome.com/icons/bars?s=solid&f=classic
+
+
+-SASS
+_Adding SASS functionality
 _creating variables for properties
 _creating breakpoints using in media querries   
-_HOW TO CREATE A BURGER MENU
+https://sass-lang.com/documentation/modules/math
+https://www.educative.io/answers/how-to-use-sass-in-your-html-code
+
+
+-How to create a BURGER MENU
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+
+
