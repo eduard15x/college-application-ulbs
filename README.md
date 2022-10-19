@@ -69,3 +69,8 @@ https://www.folkstalk.com/2022/09/how-to-store-and-get-a-single-variable-in-loca
 -storing data in JSON files 
 https://stackoverflow.com/questions/15365589/how-to-store-data-in-json-object
 https://www.w3schools.com/js/js_json_intro.asp
+
+
+-SLICK PLUGIN 
+https://kenwheeler.github.io/slick/
+https://www.jqueryscript.net/slider/Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick.html

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/application_base/client/scss/index.css">
     <!-- Adding icons from Font Awesome Site -->
     <script src="https://kit.fontawesome.com/a7e6fe19e5.js" crossorigin="anonymous"></script>
+
+    <!-- addinc slick plugin for carousel  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
 
@@ -29,7 +32,13 @@
         <i class="fa-solid fa-bars burger-menu"></i>
     </header>
 
-    <main>
+    <main class="container-main">
+        <div class="carousel-intro">
+            <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/amsterdam/1.jpg"></img></div>
+            <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/berlin/1.jpg"></img></div>
+            <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/budapest/1.jpg"></img></div>
+            <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/london/1.jpg"></img></div>
+        </div>
     </main>
 
 
@@ -49,6 +58,12 @@
         <p class="container-footer__copyright">&copy; 2022 POWER RANGERS. All Rights Reserved</p>
     </footer>
     
+
+    <!-- adding js file -->
     <script src="/application_base/client/js/main.js" type="module"></script>
+    <!-- adding jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- adding slick.js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
