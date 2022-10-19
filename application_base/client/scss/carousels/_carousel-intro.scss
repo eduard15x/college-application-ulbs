@@ -1,16 +1,32 @@
 //Hide prev/next slider arrows/buttons
-.slick-arrow {
-    display: none !important;
-}
+// .slick-arrow {
+//     display: none !important;
+// }
 
 .carousel-intro {
-    justify-content: center;
-    padding: 0px 150px;
+    @include breakpoint(desktop) {
+        padding: 0px 30px;
+    }
+
+    @include breakpoint(desktop-large) {
+        padding: 0px 130px;
+    }
 
     &--hotels {
         width: 380px;
         height: 275px;
         margin: auto;
         border-radius: 5px;
+
+        @include breakpoint(mobile) {
+            width: 320px;
+            height: 225px;
+        }
+        @include breakpoint(tablet) {
+            width: 350px;
+            height: 245px;
+        }
+
+        
     }
 }

@@ -13,7 +13,7 @@
   height: 32px;
   background-color: #0153a0;
 }
-@media (min-width: 976px) {
+@media (min-width: 900px) {
   .container-header__secondary {
     height: 40px;
     background-color: whitesmoke;
@@ -24,7 +24,7 @@
   color: whitesmoke;
   font-weight: bold;
 }
-@media (min-width: 976px) {
+@media (min-width: 900px) {
   .container-header__secondary--a {
     color: #0153a0;
     font-size: 26px;
@@ -45,7 +45,7 @@
   background-color: #0153a0;
   height: 50px;
 }
-@media (min-width: 320px) and (max-width: 595px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .container-nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -57,9 +57,10 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 9;
   }
 }
-@media (min-width: 595px) and (max-width: 976px) {
+@media (min-width: 480px) and (max-width: 900px) {
   .container-nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -70,6 +71,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 9;
   }
 }
 .container-nav__link {
@@ -81,7 +83,7 @@
   width: 75%;
   padding-bottom: 8px;
 }
-@media (min-width: 976px) {
+@media (min-width: 900px) {
   .container-nav__link {
     margin: 0px 20px;
     font-size: 18px;
@@ -97,7 +99,7 @@
 .d-none {
   display: none;
 }
-@media (min-width: 976px) {
+@media (min-width: 900px) {
   .d-none {
     display: flex;
   }
@@ -106,10 +108,13 @@
 .container-main {
   margin-top: 30px;
 }
+.container-main--is-hidden {
+  display: none;
+}
 
 .container-footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: #0153a0;
   display: flex;
@@ -147,25 +152,66 @@
   color: whitesmoke;
 }
 
+.container-account {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.container-account__row {
+  font-size: 20px;
+}
+.container-account__row--title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.container-account__form {
+  display: flex;
+  flex-direction: column;
+}
+.container-account__form label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px 0px 4px 0px;
+}
+.container-account__form input {
+  font-size: 16px;
+  padding: 6px;
+  border: 1px solid black;
+}
+.container-account__form button {
+  font-size: 20px;
+  padding: 5px;
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 15px 0px;
+}
+.container-account__form button:hover {
+  background-color: #0153a0;
+}
+
 .burger-menu {
   display: none;
   position: absolute;
   color: whitesmoke;
   font-size: 20px;
   top: -10px;
+  z-index: 10;
 }
 .burger-menu:hover {
   color: lightgray;
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 595px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .burger-menu {
     display: block;
     right: 20px;
     top: 6px;
   }
 }
-@media (min-width: 595px) and (max-width: 976px) {
+@media (min-width: 480px) and (max-width: 900px) {
   .burger-menu {
     display: block;
     right: 20px;
@@ -173,17 +219,31 @@
   }
 }
 
-.slick-arrow {
-  display: none !important;
+@media (min-width: 900px) {
+  .carousel-intro {
+    padding: 0px 30px;
+  }
 }
-
-.carousel-intro {
-  justify-content: center;
-  padding: 0px 150px;
+@media (min-width: 1600px) {
+  .carousel-intro {
+    padding: 0px 130px;
+  }
 }
 .carousel-intro--hotels {
   width: 380px;
   height: 275px;
   margin: auto;
   border-radius: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel-intro--hotels {
+    width: 320px;
+    height: 225px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .carousel-intro--hotels {
+    width: 350px;
+    height: 245px;
+  }
 }/*# sourceMappingURL=index.css.map */

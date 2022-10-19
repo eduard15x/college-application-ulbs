@@ -1,7 +1,8 @@
 //Breakpoints
 $mobile: 320px;
-$tablet: 595px;
-$desktop: 976px;
+$tablet: 480px;
+$desktop: 900px;
+$desktopLarge: 1600px;
 
 
 
@@ -17,8 +18,13 @@ $desktop: 976px;
         @media (min-width: $tablet) and (max-width: $desktop) { @content; }
     }
     
-    //for desktop or large layouts
+    //for desktop layouts
     @if $point == desktop {
         @media (min-width: $desktop) { @content; }
+    }
+
+    //for extra large desktop 
+    @if $point == desktop-large {
+        @media (min-width: $desktopLarge) { @content; }
     }
 }
