@@ -81,3 +81,6 @@ toggle(), toggleClass(), hide(), show(), fadeIn(), fadeOut()
 https://api.jquery.com/toggleclass/
 https://www.geeksforgeeks.org/jquery-hideshow-toggle-fading-methods-examples/
 https://stackoverflow.com/questions/16165008/using-jquery-hide-with-fading
+
+
+-JQUERY EACH method

@@ -1,7 +1,7 @@
 .container-footer {
     width: 100%;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     background-color: $foote-background-color;
     display: flex;
     flex-direction: column;
