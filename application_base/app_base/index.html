@@ -43,36 +43,49 @@
         </div>
 
         <section class="container-account">
-            <div class="container-account__row login-box">
+            <div class="container-account__row login-box  container-main--is-hidden">
                 <h1 class="container-account__row--title">Login</h1>
                 <form class="container-account__form login-form">
                     <label>Email</label>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="example@gmail.com">
                     <label>Password</label>
-                    <input type="password" placeholder="Password">
+                    <div class="password-box">    
+                        <input type="password" placeholder="Password" class="password-input">
+                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
+                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
+                    </div>  
                     <button type="submit">LOGIN</button>
+                    
                 </form>
-                <p class="container-account--additional">Don't have an account? <span class="register-buton">Register now</span> </p>
+                <p class="container-account--additional">Don't have an account? <span class="register-button">Register now</span> </p>
             </div>
 
-            <div class="container-account__row register-box container-main--is-hidden">
+            <div class="container-account__row register-box">
                 <h1 class="container-account__row--title">Register</h1>
                 <form class="container-account__form register-form">
                     <label>First name</label>
-                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="First name" required>
                     <label>Second name</label>
-                    <input type="text" placeholder="Second name">
+                    <input type="text" placeholder="Second name" required>
                     <label>Email</label>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="example@gmail.com" required>
                     <label>Confirm Email</label>
-                    <input type="email" placeholder="Confirm email">
+                    <input type="email" placeholder="example@gmail.com" required>
                     <label>Password</label>
-                    <input type="password" placeholder="Password">
+                    <div class="password-box">
+                        <input type="password" placeholder="Password" class="password-input" required>
+                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
+                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
+                    </div>
                     <label>Confirm Password</label>
-                    <input type="password" placeholder="Confirm password">
+                    <div class="password-box">
+                        <input type="password" placeholder="Confirm password" class="password-input" required>
+                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
+                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
+                    </div>
                     <button type="submit">REGISTER</button>
                 </form>
-                <p class="container-account--additional">Already have an account? <span class="register-buton">Login</span> </p>
+                <p class="container-account--additional">Already have an account? <span class="login-button">Login</span> </p>
             </div>
         </section>
     </main>

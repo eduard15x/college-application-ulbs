@@ -74,3 +74,10 @@ https://www.w3schools.com/js/js_json_intro.asp
 -SLICK PLUGIN 
 https://kenwheeler.github.io/slick/
 https://www.jqueryscript.net/slider/Fully-Responsive-Flexible-jQuery-Carousel-Plugin-slick.html
+
+
+-JQUERY METHODS/FUNCTION
+toggle(), toggleClass(), hide(), show(), fadeIn(), fadeOut()
+https://api.jquery.com/toggleclass/
+https://www.geeksforgeeks.org/jquery-hideshow-toggle-fading-methods-examples/
+https://stackoverflow.com/questions/16165008/using-jquery-hide-with-fading

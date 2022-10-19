@@ -1,8 +1,11 @@
-import {toggleMenuBurger} from './burger/burgerMenu.js'
-import {getJSON} from './data/getJson.js'
+import {toggleMenuBurger} from './burger/burgerMenu.js';
+import {getJSON} from './data/getJson.js';
+import {displaySections, togglePassword} from './account/myAccount.js';
 
 toggleMenuBurger();
 getJSON();
+displaySections();
+togglePassword();
 
 $(document).ready(function(){
     $('.carousel-intro').slick({
@@ -27,3 +30,5 @@ $(document).ready(function(){
         ]
       });
 });
+
+

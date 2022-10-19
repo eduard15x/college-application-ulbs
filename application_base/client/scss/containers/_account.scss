@@ -1,15 +1,31 @@
 .container-account {
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    margin: auto;
+    margin-bottom: 50px;
 
     &__row {
         font-size: 20px;
 
         &--title {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             font-size: 40px;
+
+            @include breakpoint(mobile) {
+                font-size: 28px;
+            }
+        }
+
+        .register-button,
+        .login-button {
+            cursor: pointer;
+            color: $nav-color;
+            font-weight: bold;
+
+            &:hover {
+                color: black;
+            }
         }
     }
 
@@ -20,13 +36,18 @@
         label {
             font-size: 16px;
             text-transform:uppercase;
-            margin: 10px 0px 4px 0px;
+            margin: 16px 0px 2px 0px;
         }
 
         input {
-            font-size: 16px;
-            padding: 6px;
-            border: 1px solid black;
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid rgb(110, 110, 110);
+            width: 400px;
+
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
         }
 
         button {
@@ -36,12 +57,26 @@
             color: $whitegray-color;
             cursor: pointer;
             border: none;
-            margin: 20px 0px 15px 0px;
+            margin: 25px 0px;
 
             &:hover {
                 background-color: $nav-color;
             }
         }
 
+    }
+}
+
+
+.password-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        right: 12px;
+        cursor: pointer;
+        color: darkslategrey;
     }
 }

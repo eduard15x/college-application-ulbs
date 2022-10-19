@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+body {
+  overflow: visible;
+}
+
 .container-header__secondary {
   display: flex;
   align-items: center;
@@ -155,15 +159,31 @@
 .container-account {
   display: flex;
   justify-content: center;
-  margin: 50px auto;
+  margin: auto;
+  margin-bottom: 50px;
 }
 .container-account__row {
   font-size: 20px;
 }
 .container-account__row--title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-size: 40px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-account__row--title {
+    font-size: 28px;
+  }
+}
+.container-account__row .register-button,
+.container-account__row .login-button {
+  cursor: pointer;
+  color: #0153a0;
+  font-weight: bold;
+}
+.container-account__row .register-button:hover,
+.container-account__row .login-button:hover {
+  color: black;
 }
 .container-account__form {
   display: flex;
@@ -172,12 +192,18 @@
 .container-account__form label {
   font-size: 16px;
   text-transform: uppercase;
-  margin: 10px 0px 4px 0px;
+  margin: 16px 0px 2px 0px;
 }
 .container-account__form input {
-  font-size: 16px;
-  padding: 6px;
-  border: 1px solid black;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid rgb(110, 110, 110);
+  width: 400px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-account__form input {
+    width: 100%;
+  }
 }
 .container-account__form button {
   font-size: 20px;
@@ -186,10 +212,22 @@
   color: whitesmoke;
   cursor: pointer;
   border: none;
-  margin: 20px 0px 15px 0px;
+  margin: 25px 0px;
 }
 .container-account__form button:hover {
   background-color: #0153a0;
+}
+
+.password-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.password-box__icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: darkslategrey;
 }
 
 .burger-menu {
