@@ -2,7 +2,7 @@
     {
         "name": "Royal Lancaster",
         "stars": "*****",
-        "lcoation": "London",
+        "location": "London",
         "image1": "/application_base/images/hotels/london/1.jpg",
         "image2": "/application_base/images/hotels/london/2.jpg",
         "image3": "/application_base/images/hotels/london/3.jpg",
@@ -11,7 +11,7 @@
     {
         "name": "Intercontinental",
         "stars": "*****",
-        "lcoation": "Budapest",
+        "location": "Budapest",
         "image1": "/application_base/images/hotels/budapest/1.jpg",
         "image2": "/application_base/images/hotels/budapest/2.jpg",
         "image3": "/application_base/images/hotels/budapest/3.jpg",
@@ -20,7 +20,7 @@
     {
         "name": "Schlosshotel",
         "stars": "*****",
-        "lcoation": "Berlin",
+        "location": "Berlin",
         "image1": "/application_base/images/hotels/berlin/1.jpg",
         "image2": "/application_base/images/hotels/berlin/2.jpg",
         "image3": "/application_base/images/hotels/berlin/3.jpg",
@@ -29,7 +29,7 @@
     {
         "name": "Adlon Kempinski",
         "stars": "*****",
-        "lcoation": "Amsterdam",
+        "location": "Amsterdam",
         "image1": "/application_base/images/hotels/amsterdam/1.jpg",
         "image2": "/application_base/images/hotels/amsterdam/2.jpg",
         "image3": "/application_base/images/hotels/amsterdam/3.jpg",

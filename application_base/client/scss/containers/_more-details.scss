@@ -1,0 +1,24 @@
+.container-more-details {
+    text-align: center;
+}
+
+.hotels-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px 0px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 600px;
+            height: 350px;
+        }
+    }
+}

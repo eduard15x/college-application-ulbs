@@ -118,7 +118,7 @@ body {
 
 .container-footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   background-color: #0153a0;
   display: flex;
@@ -228,6 +228,29 @@ body {
   right: 12px;
   cursor: pointer;
   color: darkslategrey;
+}
+
+.container-more-details {
+  text-align: center;
+}
+
+.hotels-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0px;
+}
+.hotels-list__item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.hotels-list__item img {
+  width: 600px;
+  height: 350px;
 }
 
 .burger-menu {
