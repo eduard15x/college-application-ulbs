@@ -19,31 +19,33 @@ const getJSON = function() {
 
         for ( let i = 0; i < hotels.length; i++) {
             
-            let hotelList = document.querySelector('.hotels-list');  
+            let hotelList = document.querySelector('.hotels-list'); 
             hotelList.innerHTML += `
-            <li class="hotels-list__item">
-                <h2>${hotels[i].name}</h2>
-                <h3>${hotels[i].stars}</h3>
-                <h3>${hotels[i].location}</h3>
-                <img src="${hotels[i].image1}" alt="Hotel ${hotels[i].name}">
+            <li class="hotels-list__item" title="Click for more photos">
+                <h2 class="hotels-list__item--title">${hotels[i].name}</h2>
+                <h3 class="hotels-list__item--stars">${hotels[i].stars}</h3>
+                <h3 class="hotels-list__item--location">${hotels[i].location}</h3>
+                <img src="${hotels[i].image1}" alt="${hotels[i].alt}">
             </li>
             `
 
-            console.log(hotels[i].name)
         }
 
-        // console.log(typeof hotels)
-        // $.each(hotels, (index, key) => {
-        //     // console.log(hotels[index].name)
+        //to use this.element you need to avoid arrow functions
+        $('li').hover(
+            function() {$(this).animate({'opacity' : '0.5'}, 225);
+                        $(this).css({'box-shadow': 'none'});
+            },
+            function() {$(this).animate({'opacity': '1'}, 225);
+                        $(this).css({'box-shadow': '0px 0px 18px 10px #bfbfbf'});
+            }
+        );
 
-            
-        // hotelList.html(`
-        // <li class="hotels-list-item">
-        //     <p>${hotels.}</p>
-        // </li>
-        // `)
-        // })
+        $('li').click( function() {
+            console.log($(this).text())
+        })
     })
+    
 }
 
 export {getJSON};

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: $nav-color;
-    height: 50px;
+    height: 60px;
 
     @include breakpoint(mobile) {
         flex-direction: column;

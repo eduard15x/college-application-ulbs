@@ -47,7 +47,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #0153a0;
-  height: 50px;
+  height: 60px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container-nav {
@@ -111,6 +111,7 @@ body {
 
 .container-main {
   margin-top: 30px;
+  background-color: rgb(224, 224, 224);
 }
 .container-main--is-hidden {
   display: none;
@@ -239,18 +240,35 @@ body {
   width: 100%;
   flex-wrap: wrap;
   text-align: center;
-  margin: 50px 0px;
+  justify-content: center;
 }
 .hotels-list__item {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 600px;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
+  margin: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 18px 10px #bfbfbf;
+  cursor: pointer;
+}
+.hotels-list__item--title {
+  font-size: 24px;
+  margin: 12px 0px;
+}
+.hotels-list__item--stars {
+  font-size: 30px;
+}
+.hotels-list__item--location {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .hotels-list__item img {
   width: 600px;
   height: 350px;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .burger-menu {
