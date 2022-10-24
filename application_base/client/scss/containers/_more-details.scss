@@ -42,3 +42,55 @@
         }
     }
 }
+
+
+// <div class="container-more-images">
+//     <p class="prev-image"><</p>
+//     <img src="/application_base/images/hotels/amsterdam/1.jpg" class="container-more-images__image"></img>
+//     <p class="next-image">></p>
+// </div>
+
+.container-more-images {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    background-color: black;
+    width: 75%;
+    border-radius: 15px;
+    z-index: 9999;
+
+    .prev-image,
+    .next-image {
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+    .prev-image {
+        left: 20px;
+    }
+    .next-image {
+        right: 20px;
+    }
+
+    img {
+        width: 85%;
+        opacity: 0.75;
+    }
+    
+    .close-container {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        z-index: 99999;
+    }
+}

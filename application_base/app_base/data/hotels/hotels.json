@@ -3,40 +3,48 @@
         "name": "Royal Lancaster",
         "stars": "*****",
         "location": "London",
-        "image1": "/application_base/images/hotels/london/1.jpg",
-        "image2": "/application_base/images/hotels/london/2.jpg",
-        "image3": "/application_base/images/hotels/london/3.jpg",
-        "image4": "/application_base/images/hotels/london/4.jpg",
-        "alt": "Royal Lancaster hotel"
+        "alt": "Royal Lancaster hotel",
+        "image": [
+            "/application_base/images/hotels/london/1.jpg",
+            "/application_base/images/hotels/london/2.jpg",
+            "/application_base/images/hotels/london/3.jpg",
+            "/application_base/images/hotels/london/4.jpg"
+        ]
     },
     {
         "name": "Intercontinental",
         "stars": "*****",
         "location": "Budapest",
-        "image1": "/application_base/images/hotels/budapest/1.jpg",
-        "image2": "/application_base/images/hotels/budapest/2.jpg",
-        "image3": "/application_base/images/hotels/budapest/3.jpg",
-        "image4": "/application_base/images/hotels/budapest/4.jpg",
-        "alt": "Intercontinental hotel"
+        "alt": "Intercontinental hotel",
+        "image": [
+            "/application_base/images/hotels/budapest/1.jpg",
+            "/application_base/images/hotels/budapest/2.jpg",
+            "/application_base/images/hotels/budapest/3.jpg",
+            "/application_base/images/hotels/budapest/4.jpg"           
+        ]
     },
     {
         "name": "Schlosshotel",
         "stars": "*****",
         "location": "Berlin",
-        "image1": "/application_base/images/hotels/berlin/1.jpg",
-        "image2": "/application_base/images/hotels/berlin/2.jpg",
-        "image3": "/application_base/images/hotels/berlin/3.jpg",
-        "image4": "/application_base/images/hotels/berlin/4.jpg",
-        "alt": "Schlosshotel hotel"
+        "alt": "Schlosshotel hotel",
+        "image": [
+            "/application_base/images/hotels/berlin/1.jpg",
+            "/application_base/images/hotels/berlin/2.jpg",
+            "/application_base/images/hotels/berlin/3.jpg",
+            "/application_base/images/hotels/berlin/4.jpg"
+        ]
     },
     {
         "name": "Adlon Kempinski",
         "stars": "*****",
         "location": "Amsterdam",
-        "image1": "/application_base/images/hotels/amsterdam/1.jpg",
-        "image2": "/application_base/images/hotels/amsterdam/2.jpg",
-        "image3": "/application_base/images/hotels/amsterdam/3.jpg",
-        "image4": "/application_base/images/hotels/amsterdam/4.jpg",
-        "alt": "Adlon Kempinski hotel"
+        "alt": "Adlon Kempinski hotel",
+        "image": [
+            "/application_base/images/hotels/amsterdam/1.jpg",
+            "/application_base/images/hotels/amsterdam/2.jpg",
+            "/application_base/images/hotels/amsterdam/3.jpg",
+            "/application_base/images/hotels/amsterdam/4.jpg"
+        ]
     }
 ]
