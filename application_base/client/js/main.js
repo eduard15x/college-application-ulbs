@@ -1,9 +1,11 @@
 import {toggleMenuBurger} from './burger/burgerMenu.js';
-import {getJSON} from './data/getJson.js';
+import {getJSONHotels} from './data/getJsonHotels.js';
+import { getJSONTeam } from './data/getJsonTeam.js';
 import {displaySections, togglePassword} from './account/myAccount.js';
 
 toggleMenuBurger();
-getJSON();
+getJSONHotels();
+getJSONTeam();
 displaySections();
 togglePassword();
 

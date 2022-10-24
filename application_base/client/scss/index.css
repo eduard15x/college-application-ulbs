@@ -300,6 +300,7 @@ body {
 }
 .container-more-images img {
   width: 85%;
+  height: 600px;
   opacity: 0.75;
 }
 .container-more-images .close-container {

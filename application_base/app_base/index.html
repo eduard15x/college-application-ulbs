@@ -33,8 +33,8 @@
     </header>
 
     <main class="container-main ">
-        <div class="">
-            <section class="carousel-intro d-none container-main--is-hidden">
+        <div class=" container-main--is-hidden">
+            <section class="carousel-intro">
                 <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/amsterdam/1.jpg"></img></div>
                 <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/berlin/1.jpg"></img></div>
                 <div><img class="carousel-intro--hotels" src="/application_base/images/hotels/budapest/1.jpg"></img></div>
@@ -42,8 +42,8 @@
             </section>
         </div>
 
-        <section class="container-account">
-            <div class="container-account__row login-box">
+        <section class="container-account d-none ">
+            <div class="container-account__row login-box  container-main--is-hidden">
                 <h1 class="container-account__row--title">Login</h1>
                 <form class="container-account__form login-form">
                     <label>Email</label>
@@ -89,7 +89,7 @@
             </div>
         </section>
 
-        <section class="container-more-details">
+        <section class="container-more-details  container-main--is-hidden">
             <p>See more details about our hotels and some photos for all of them</p>
             <ul class="hotels-list">
                 <!-- <li class="hotels-list__items"></li> -->
@@ -97,6 +97,14 @@
             <div class="container-more-images">
                 <!-- javascript functionality added -->
             </div>
+        </section>
+
+        <section class="container-contact">
+            <p>Get in touch with us for better offers</p>
+            <P>Below you can see our team and get in contact with anybody for more informations and more details about the journeys.</P>
+            <ul class="container-contact-list">
+
+            </ul>
         </section>
     </main>
 
