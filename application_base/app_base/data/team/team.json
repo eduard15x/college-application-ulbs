@@ -1,37 +1,37 @@
 [
     {
         "name": "Eduard",
-        "age": "23",
-        "role": "Support",
+        "role": "Support - Accomodations",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090"
+        "tel": "+40743224090",
+        "img": "/application_base/images/team/Eduard.jpg"
     },
     {
         "name": "Georgiana",
-        "age": "idk",
-        "role": "Support",
+        "role": "Support - Germany",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090"
+        "tel": "+40743224090",
+        "img": "/application_base/images/team/Eduard.jpg"
     },
     {
         "name": "Octavian",
-        "age": "idk",
-        "role": "Support",
+        "role": "Support - Hungary",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090"
+        "tel": "+40743224090",
+        "img": "/application_base/images/team/Eduard.jpg"
     },
     {
         "name": "Simona",
-        "age": "idk",
-        "role": "Support",
+        "role": "Support - United Kingdon",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090"
+        "tel": "+40743224090",
+        "img": "/application_base/images/team/Eduard.jpg"
     },
     {
         "name": "Valentin",
-        "age": "idk",
-        "role": "Support",
+        "role": "Support - Netherlands",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090"
+        "tel": "+40743224090",
+        "img": "/application_base/images/team/Eduard.jpg"
     }
 ]

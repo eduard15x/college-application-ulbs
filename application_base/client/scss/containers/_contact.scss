@@ -1,0 +1,69 @@
+// `<li class="container-contact-list__item">
+//     <img src="${value.img}" alt="${value.name}" class="container-contact-list__item--img">
+//     <p class="container-contact-list__item--text">${value.name}</p>
+//     <p class="container-contact-list__item--text">${value.role}</p>
+//     <span class="container-contact-list__item--span"> 
+//         <a href="mailto:${value.mail}"><i class="fa-regular fa-envelope"></i></a> 
+//         <a href="tel:${value.tel}"><i class="fa-solid fa-phone"></i></a> 
+//     </span>
+// </li>`
+
+.container-contact {
+
+    &--intro {
+        text-align: center;
+        font-size: 24px;
+        line-height: 175%;
+    }
+}
+
+.container-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 8px 2px gray;
+        border-radius: 10px;
+        margin: 25px 50px;
+        padding: 25px;
+        width: 20%;
+        background: linear-gradient(180deg, rgb(207, 207, 214) 0%, rgba(244,236,236,1) 50%);
+
+        &--img {
+            margin-bottom: 12px;
+            box-shadow: 0px 0px 10px 4px darkgray;
+        }
+
+        &--text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        &--span {
+            margin-top: 6px;
+            
+            a {
+                font-size: 20px;
+                margin: 0px 12px;
+                color: #168486;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+
+.container-contact-list__item--img {
+    width: 150px;
+    border-radius: 50%;
+}

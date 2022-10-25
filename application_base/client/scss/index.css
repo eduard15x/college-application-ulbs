@@ -314,6 +314,55 @@ body {
   z-index: 99999;
 }
 
+.container-contact--intro {
+  text-align: center;
+  font-size: 24px;
+  line-height: 175%;
+}
+
+.container-contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+.container-contact-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 8px 2px gray;
+  border-radius: 10px;
+  margin: 25px 50px;
+  padding: 25px;
+  width: 20%;
+  background: linear-gradient(180deg, rgb(207, 207, 214) 0%, rgb(244, 236, 236) 50%);
+}
+.container-contact-list__item--img {
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 10px 4px darkgray;
+}
+.container-contact-list__item--text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.container-contact-list__item--span {
+  margin-top: 6px;
+}
+.container-contact-list__item--span a {
+  font-size: 20px;
+  margin: 0px 12px;
+  color: #168486;
+}
+.container-contact-list__item--span a:hover {
+  color: black;
+}
+
+.container-contact-list__item--img {
+  width: 150px;
+  border-radius: 50%;
+}
+
 .burger-menu {
   display: none;
   position: absolute;
