@@ -3,7 +3,7 @@
 //     display: none !important;
 // }
 
-.carousel-intro {
+.container-carousel {
     @include breakpoint(desktop) {
         padding: 0px 30px;
     }

@@ -2,15 +2,17 @@ import {toggleMenuBurger} from './burger/burgerMenu.js';
 import {getJSONHotels} from './data/getJsonHotels.js';
 import { getJSONTeam } from './data/getJsonTeam.js';
 import {displaySections, togglePassword} from './account/myAccount.js';
+import { displayContainers } from './manipulate/displayContainers.js';
 
 toggleMenuBurger();
 getJSONHotels();
 getJSONTeam();
 displaySections();
 togglePassword();
+displayContainers();
 
 $(document).ready(function(){
-    $('.carousel-intro').slick({
+    $('.container-carousel').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,

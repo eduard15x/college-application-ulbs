@@ -48,9 +48,11 @@ _Adding SASS functionality
 _creating variables for properties
 _creating breakpoints using in media querries   
 _animations
+_css gradients background/colors
 https://sass-lang.com/documentation/modules/math
 https://www.educative.io/answers/how-to-use-sass-in-your-html-code
 https://www.w3schools.com/css/css3_animations.asp
+https://cssgradient.io/
 
 
 -How to create a BURGER MENU
@@ -83,4 +85,6 @@ https://www.geeksforgeeks.org/jquery-hideshow-toggle-fading-methods-examples/
 https://stackoverflow.com/questions/16165008/using-jquery-hide-with-fading
 
 
--JQUERY EACH method
+-JQUERY EACH method / for loop with each() 
+https://www.tutorialrepublic.com/faq/how-to-display-all-items-in-array-using-loop-in-jquery.php
+https://learn.jquery.com/using-jquery-core/understanding-index/

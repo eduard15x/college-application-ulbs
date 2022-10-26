@@ -391,29 +391,29 @@ body {
 }
 
 @media (min-width: 900px) {
-  .carousel-intro {
+  .container-carousel {
     padding: 0px 30px;
   }
 }
 @media (min-width: 1600px) {
-  .carousel-intro {
+  .container-carousel {
     padding: 0px 130px;
   }
 }
-.carousel-intro--hotels {
+.container-carousel--hotels {
   width: 380px;
   height: 275px;
   margin: auto;
   border-radius: 5px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .carousel-intro--hotels {
+  .container-carousel--hotels {
     width: 320px;
     height: 225px;
   }
 }
 @media (min-width: 480px) and (max-width: 900px) {
-  .carousel-intro--hotels {
+  .container-carousel--hotels {
     width: 350px;
     height: 245px;
   }
