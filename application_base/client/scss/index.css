@@ -326,6 +326,95 @@ body {
   z-index: 99999;
 }
 
+.container-offers__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-offers__list--item {
+  border: 10px solid black;
+  width: 80%;
+  background-color: blueviolet;
+  display: flex;
+  height: 300px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-offers__list--item {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-offers__list--item {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+  }
+}
+.container-offers__list--item img {
+  width: 500px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-offers__list--item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-offers__list--item img {
+    width: 100%;
+    height: auto;
+  }
+}
+.container-offers__list--item .item__details {
+  margin: 0px 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-offers__list--item .item__details {
+    margin: 15px 10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-offers__list--item .item__details {
+    margin: 20px;
+  }
+}
+.container-offers__list--item .item__details h2 {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 24px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-offers__list--item .item__details h2 {
+    margin: 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-offers__list--item .item__details h2 {
+    margin: 15px;
+    font-size: 22px;
+  }
+}
+.container-offers__list--item .item__details p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 165%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-offers__list--item .item__details p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-offers__list--item .item__details p {
+    font-size: 18px;
+    line-height: 160%;
+  }
+}
+
 .container-contact--intro {
   text-align: center;
   font-size: 24px;

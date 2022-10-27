@@ -1,0 +1,98 @@
+// <section class="container-offers">
+//     <ul class="container-offers__list">
+//     <li class="container-offers__list--item">
+//     <img src="/application_base/images/hotels/amsterdam/1.jpg" class="">
+//     <div class=item__details>
+//         <h2>Amsterdam</h2>
+//         <p>This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. 
+//             This is a hotel in Amsterdam. This is a hotel in Amsterdam.This is a hotel in Amsterdam. This is a hotel in Amsterdam.
+//         </p>
+//     </div>
+// </li>
+
+.container-offers {
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--item {
+            border: 10px solid black;
+            width: 80%;
+            background-color: blueviolet;
+            display: flex;
+            height: 300px;
+
+            @include breakpoint(mobile) {
+                flex-direction: column;
+                height: auto;
+                width: 90%;
+            }
+
+            @include breakpoint(tablet) {
+                flex-direction: column;
+                height: auto;
+                width: 80%;
+            }
+
+            img {
+                width: 500px;
+
+                @include breakpoint(mobile) {
+                    width: 100%;
+                    height: auto;
+
+                }
+
+                @include breakpoint(tablet) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+
+            .item__details {
+                margin: 0px 50px;
+
+                @include breakpoint(mobile) {
+                    margin: 15px 10px;
+                }
+
+                @include breakpoint(tablet) {
+                    margin: 20px;
+                }
+
+                h2 {
+                    margin: 20px 0px;
+                    text-align: center;
+                    font-size: 24px;
+
+                    @include breakpoint(mobile){
+                        margin: 10px;
+                        font-size: 20px;
+                    }
+                    @include breakpoint(tablet) {
+                        margin: 15px;
+                        font-size: 22px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 18px;
+                    line-height: 165%;
+
+                    @include breakpoint(mobile) {
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 18px;
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+    }
+}
