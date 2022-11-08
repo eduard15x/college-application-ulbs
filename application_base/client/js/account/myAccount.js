@@ -8,7 +8,7 @@ const displaySections = function() {
     let registerContainer = $('.register-box');
     let inputsForm = $('.container-account__form  input')
 
-
+    
     accountContainer.click( (e) => {
         if ( e.target.className === 'register-button') {
             inputsForm.val('');

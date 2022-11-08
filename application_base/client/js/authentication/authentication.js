@@ -1,70 +1,108 @@
 const authentication = function() {
 
     //user register
-    let firstName = $('#first-name');
-    let secondName = $('#second-name');
+    let username = $('#username');
     let email = $('#user-email');
-    let confirmEmail = $('#user-confirm-email');
-    let confirmPassword = $('#user-confirm-password');
     let password = $('#user-password');
     const registerUser = $('#register-account');
     //user login
+    let loginUsername =$('#login-user-username');
     let loginEmail = $('#login-user-email');
     let loginPassword = $('#login-user-password')
     const loginUser = $('#login-account');
+    //selectors for sections
+    let headerContainer = $('.container-header');
+    let mainContainer = $('.container-main');
+    let footerContainer = $('.container-footer');
+    let authenticationContainer = $('.container-account');
+    //user logged in from nav
+    let userLoggedIn = $('#userLoggedIn');
+
+    function hideContainers() {
+        headerContainer.hide();
+        mainContainer.hide();
+        footerContainer.hide();    
+        authenticationContainer.show();
+    }
+
+    function showContainers() {
+        headerContainer.show();
+        mainContainer.show();
+        footerContainer.show();
+        authenticationContainer.hide();    
+    }
+
+    hideContainers()
+
+    
     
 
     registerUser.on('click', () => {
         let currentUser = [];
         let allUsers = {
-            firstName: firstName.val(),
-            secondName: secondName.val(),
+            username: username.val(),
             email: email.val(),
-            confirmEmail: confirmEmail.val(),
             password: password.val(),
-            confirmPassword: confirmPassword.val(),
         };
+        let checkUserExists = '';
 
-        if (firstName.val() === '' || secondName.val() === '' || email.val() === '' ||
-        confirmEmail.val() === '' || password.val() === '' ||confirmPassword.val() === '') {
+        if (username.val() === '' || email.val() === '' || password.val() === '') {
             alert('Form is incomplete!');
-        } 
-        else if (email.val() !== confirmEmail.val()) {
-            alert(`Email doesn't match!`)
-        } 
-        else if (password.val() !== confirmPassword.val()) {
-            alert(`Password doesn't match!`)
-        } 
-        else {
+        } else {
             if (localStorage.getItem('users') === null) {
                 currentUser.push(allUsers);
                 localStorage.setItem('users', JSON.stringify(currentUser));
-            } 
-            else {
+            }  else {
                 currentUser = JSON.parse(localStorage.getItem('users'));
                 currentUser.push(allUsers);
                 localStorage.setItem('users', JSON.stringify(currentUser));
             }
-
-            console.log(currentUser);
-            alert ('Registration completed, you can log in!')
         }
+
+        // currentUser = JSON.parse(localStorage.getItem('users'));
+        // checkUserExists = currentUser.find( el => el.username === username.val() );
+        // const checkIntro = checkUserExists.username
+
+        // if ( checkIntro === username.val()) {
+
+        //     console.log(`ttttttttttttttttt ${checkIntro}`)
+            
+        // }
+
+        delete item when match!
+
     });
 
 
-    const finalUser = JSON.parse(localStorage.getItem('users'));
+    const finalUsers = JSON.parse(localStorage.getItem('users'));
 
     loginUser.on('click', () => {
-        const filterArray = finalUser.filter( user => 
-            user.email === loginEmail.val() && user.password === loginPassword.val())
-        console.log(filterArray);
-        if (filterArray.length > 0) {
-            alert('Welcome')
-        } else if (loginEmail.val() === '' || loginPassword.val() === '') {
-            alert('Complete the form')
+        userLoggedIn.text();
+        let currentUser = [];
+        currentUser = JSON.parse(localStorage.getItem('users'));
+        const filterArray = finalUsers.filter( user => 
+            user.username === loginUsername.val()
+            && user.email === loginEmail.val() 
+            && user.password === loginPassword.val()
+        )
+        console.log(`This is finalUsers from localStorage ${filterArray}`)
+        console.log(filterArray)
+
+        if (filterArray.length > 0 && loginUsername.val() !== '' && loginEmail.val() !== '' && loginPassword.val() !== '') {
+            alert('Welcome');
+            showContainers();
+            console.log(currentUser);
+            userLoggedIn.text(`Hello, ${loginUsername.val()}!`);
+
+            
+            console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
+            console.log(currentUser);
+        } else if (loginUsername.val() === '' || loginEmail.val() === '' || loginPassword.val() === '') {
+            alert('Complete the data')
         } else  {
-            alert('username')
-            location.href='myfile.php?bo_table=movie&wr_id=756'
+            alert('Wrong data')
+            console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
+            console.log(currentUser);
         }
     });
 

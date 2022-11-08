@@ -27,13 +27,57 @@
             <a href="#" class="container-nav__link" id="availabilityPage">Availability</a>
             <a href="#" class="container-nav__link" id="moreDetailsPage">More details</a>
             <a href="#" class="container-nav__link" id="contactPage">Contact</a>
-            <a href="#" class="container-nav__link" id="accountPage">Account</a>
-            <a href="#" class="container-nav__link" id="accountPage">Hello, Eduard! See your books.</a>
+            <a href="#" class="container-nav__link" id="userLoggedIn"></a>
         </nav>
         <i class="fa-solid fa-bars burger-menu"></i>
     </header>
 
+    <div class="container-account">
+        <div class="container-account__row login-box">
+            <h1 class="container-account__row--title">Login</h1>
+            <form class="container-account__form login-form">
+                <label for="login-user-username">Username</label>
+                <input type="text" id="login-user-username" placeholder="Username" required>
+                <label for="login-user-email">Email</label>
+                <input type="email" id="login-user-email" placeholder="example@gmail.com" required>
+                <label for="login-user-password">Password</label>
+                <div class="password-box">    
+                    <input type="password" id="login-user-password" placeholder="Password" class="password-input" required>
+                    <i class="fa-solid fa-eye password-box__icon show-password"></i>
+                    <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
+                </div>  
+                <button type="button" id="login-account">LOGIN</button>
+                
+            </form>
+            <p class="container-account--additional">Don't have an account? <span class="register-button">Register now</span> </p>
+        </div>
+
+        <div class="container-account__row register-box container-main--is-hidden">
+            <h1 class="container-account__row--title">Register</h1>
+            <form class="container-account__form register-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" placeholder="example@gmail.com" required>
+                <label for="user-password">Password</label>
+                <div class="password-box">
+                    <input type="password" id="user-password" placeholder="Password" class="password-input" required>
+                    <i class="fa-solid fa-eye password-box__icon show-password"></i>
+                    <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
+                </div>
+                <button type="button" id="register-account">REGISTER</button>
+            </form>
+            <p class="container-account--additional">Already have an account? <span class="login-button">Login</span> </p>
+        </div>
+
+        <div class="intro-title-and-logo">
+            <p>AirULBS</p>
+            <i class="fa-solid fa-earth-europe"></i>
+        </div>
+    </div>
+
     <main class="container-main ">
+
         <section class="container-intro-home">
             <div class="container-intro-home__details">
                 <h1>About us</h1>
@@ -63,53 +107,6 @@
                     <img class="container-carousel--hotels" src="/application_base/images/hotels/london/1.jpg"></img>
                     <p class="container-carousel--name">Royal Castle, London</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="container-account">
-            <div class="container-account__row login-box">
-                <h1 class="container-account__row--title">Login</h1>
-                <form class="container-account__form login-form">
-                    <label for="login-user-email">Email</label>
-                    <input type="email" id="login-user-email" placeholder="example@gmail.com" required>
-                    <label for="login-user-password">Password</label>
-                    <div class="password-box">    
-                        <input type="password" id="login-user-password" placeholder="Password" class="password-input" required>
-                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
-                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
-                    </div>  
-                    <button type="submit" id="login-account">LOGIN</button>
-                    
-                </form>
-                <p class="container-account--additional">Don't have an account? <span class="register-button">Register now</span> </p>
-            </div>
-
-            <div class="container-account__row register-box container-main--is-hidden">
-                <h1 class="container-account__row--title">Register</h1>
-                <form class="container-account__form register-form">
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" placeholder="First name" required>
-                    <label for="second-name">Second name</label>
-                    <input type="text" id="second-name" placeholder="Second name" required>
-                    <label for="user-email">Email</label>
-                    <input type="email" id="user-email" placeholder="example@gmail.com" required>
-                    <label for="user-confirm-email">Confirm Email</label>
-                    <input type="email" id="user-confirm-email" placeholder="example@gmail.com" required>
-                    <label for="user-password">Password</label>
-                    <div class="password-box">
-                        <input type="password" id="user-password" placeholder="Password" class="password-input" required>
-                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
-                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
-                    </div>
-                    <label for="user-confirm-password">Confirm Password</label>
-                    <div class="password-box">
-                        <input type="password" id="user-confirm-password" placeholder="Confirm password" class="password-input" required>
-                        <i class="fa-solid fa-eye password-box__icon show-password"></i>
-                        <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
-                    </div>
-                    <button type="submit" id="register-account">REGISTER</button>
-                </form>
-                <p class="container-account--additional">Already have an account? <span class="login-button">Login</span> </p>
             </div>
         </section>
 

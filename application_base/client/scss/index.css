@@ -173,15 +173,14 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-bottom: 50px;
 }
 .container-account__row {
   font-size: 20px;
 }
 .container-account__row--title {
   text-align: center;
-  margin-bottom: 12px;
-  font-size: 40px;
+  margin: 20px 0px;
+  font-size: 50px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container-account__row--title {
@@ -241,6 +240,15 @@ body {
   right: 12px;
   cursor: pointer;
   color: darkslategrey;
+}
+
+.intro-title-and-logo {
+  position: absolute;
+  color: rgb(27, 27, 27);
+  bottom: 50px;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 3px 6px 9px rgba(0, 0, 0, 0.61);
 }
 
 .container-more-details {

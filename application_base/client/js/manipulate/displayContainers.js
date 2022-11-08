@@ -6,7 +6,6 @@ const displayContainers = function() {
     let availabilityPage = $('#availabilityPage');
     let moreDetailsPage = $('#moreDetailsPage');
     let contactPage = $('#contactPage');
-    let accountPage = $('#accountPage');
 
     //define the containers/sections
     let sectionHomepage = $('.container-intro-home');
@@ -24,26 +23,24 @@ const displayContainers = function() {
     sectionMoreDetails.hide();
     sectionContact.hide();
     //new implementation
-    sectionAccount.show();
+    // sectionAccount.show();
 
     //create function for showing/hiding section
-    function showSection(button, sectionDisplay, section1, section2, section3, section4, section5) {
+    function showSection(button, sectionDisplay, section1, section2, section3, section4) {
         button.on('click', () => {
             sectionDisplay.fadeIn(750);
             section1.hide();
             section2.hide();
             section3.hide();
             section4.hide();
-            section5.hide();
         });
     };
     //call function for every case
-    showSection(homePage, sectionHomepage, sectionOffers, sectionAvailability, sectionMoreDetails, sectionContact, sectionAccount);
-    showSection(offersPage, sectionOffers, sectionHomepage, sectionAvailability, sectionMoreDetails, sectionContact, sectionAccount);
-    showSection(availabilityPage, sectionAvailability, sectionHomepage, sectionOffers, sectionMoreDetails, sectionContact, sectionAccount);
-    showSection(moreDetailsPage, sectionMoreDetails, sectionHomepage, sectionOffers, sectionAvailability, sectionContact, sectionAccount);
-    showSection(contactPage, sectionContact, sectionHomepage, sectionOffers, sectionAvailability, sectionMoreDetails, sectionAccount);
-    showSection(accountPage, sectionAccount, sectionHomepage, sectionOffers, sectionAvailability, sectionMoreDetails, sectionContact);
+    showSection(homePage, sectionHomepage, sectionOffers, sectionAvailability, sectionMoreDetails, sectionContact);
+    showSection(offersPage, sectionOffers, sectionHomepage, sectionAvailability, sectionMoreDetails, sectionContact);
+    showSection(availabilityPage, sectionAvailability, sectionHomepage, sectionOffers, sectionMoreDetails, sectionContact);
+    showSection(moreDetailsPage, sectionMoreDetails, sectionHomepage, sectionOffers, sectionAvailability, sectionContact);
+    showSection(contactPage, sectionContact, sectionHomepage, sectionOffers, sectionAvailability, sectionMoreDetails);
 }
 
 export { displayContainers }
