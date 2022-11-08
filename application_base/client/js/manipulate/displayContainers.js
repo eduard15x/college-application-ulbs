@@ -18,12 +18,13 @@ const displayContainers = function() {
 
     //initialise the section to display when user open page
     sectionHomepage.hide();
-    sectionHomepage.fadeIn(1000);
+    // sectionHomepage.fadeIn(1000);
     sectionOffers.hide();
     sectionAvailability.hide();
     sectionMoreDetails.hide();
     sectionContact.hide();
-    sectionAccount.hide();
+    //new implementation
+    sectionAccount.show();
 
     //create function for showing/hiding section
     function showSection(button, sectionDisplay, section1, section2, section3, section4, section5) {

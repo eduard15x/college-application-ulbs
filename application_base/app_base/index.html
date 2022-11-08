@@ -28,6 +28,7 @@
             <a href="#" class="container-nav__link" id="moreDetailsPage">More details</a>
             <a href="#" class="container-nav__link" id="contactPage">Contact</a>
             <a href="#" class="container-nav__link" id="accountPage">Account</a>
+            <a href="#" class="container-nav__link" id="accountPage">Hello, Eduard! See your books.</a>
         </nav>
         <i class="fa-solid fa-bars burger-menu"></i>
     </header>
@@ -69,15 +70,15 @@
             <div class="container-account__row login-box">
                 <h1 class="container-account__row--title">Login</h1>
                 <form class="container-account__form login-form">
-                    <label>Email</label>
-                    <input type="email" placeholder="example@gmail.com" required>
-                    <label>Password</label>
+                    <label for="login-user-email">Email</label>
+                    <input type="email" id="login-user-email" placeholder="example@gmail.com" required>
+                    <label for="login-user-password">Password</label>
                     <div class="password-box">    
-                        <input type="password" placeholder="Password" class="password-input" required>
+                        <input type="password" id="login-user-password" placeholder="Password" class="password-input" required>
                         <i class="fa-solid fa-eye password-box__icon show-password"></i>
                         <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
                     </div>  
-                    <button type="submit">LOGIN</button>
+                    <button type="submit" id="login-account">LOGIN</button>
                     
                 </form>
                 <p class="container-account--additional">Don't have an account? <span class="register-button">Register now</span> </p>
@@ -86,27 +87,27 @@
             <div class="container-account__row register-box container-main--is-hidden">
                 <h1 class="container-account__row--title">Register</h1>
                 <form class="container-account__form register-form">
-                    <label>First name</label>
-                    <input type="text" placeholder="First name" required>
-                    <label>Second name</label>
-                    <input type="text" placeholder="Second name" required>
-                    <label>Email</label>
-                    <input type="email" placeholder="example@gmail.com" required>
-                    <label>Confirm Email</label>
-                    <input type="email" placeholder="example@gmail.com" required>
-                    <label>Password</label>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" placeholder="First name" required>
+                    <label for="second-name">Second name</label>
+                    <input type="text" id="second-name" placeholder="Second name" required>
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" placeholder="example@gmail.com" required>
+                    <label for="user-confirm-email">Confirm Email</label>
+                    <input type="email" id="user-confirm-email" placeholder="example@gmail.com" required>
+                    <label for="user-password">Password</label>
                     <div class="password-box">
-                        <input type="password" placeholder="Password" class="password-input" required>
+                        <input type="password" id="user-password" placeholder="Password" class="password-input" required>
                         <i class="fa-solid fa-eye password-box__icon show-password"></i>
                         <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
                     </div>
-                    <label>Confirm Password</label>
+                    <label for="user-confirm-password">Confirm Password</label>
                     <div class="password-box">
-                        <input type="password" placeholder="Confirm password" class="password-input" required>
+                        <input type="password" id="user-confirm-password" placeholder="Confirm password" class="password-input" required>
                         <i class="fa-solid fa-eye password-box__icon show-password"></i>
                         <i class="fa-solid fa-eye-slash password-box__icon hide-password"></i>
                     </div>
-                    <button type="submit">REGISTER</button>
+                    <button type="submit" id="register-account">REGISTER</button>
                 </form>
                 <p class="container-account--additional">Already have an account? <span class="login-button">Login</span> </p>
             </div>
@@ -135,8 +136,8 @@
                 <li class="container-offers__list--item">
                     <img src="">
                     <div>
-                        <h2>Title</h2>
-                        <p>Description</p>
+                        <h2></h2>
+                        <p></p>
                     </div>
                 </li>
                 <li class="container-offers__list--item">

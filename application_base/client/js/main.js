@@ -1,3 +1,4 @@
+import { authentication } from './authentication/authentication.js';
 import {toggleMenuBurger} from './burger/burgerMenu.js';
 import {getJSONHotels} from './data/getJsonHotels.js';
 import { getJSONTeam } from './data/getJsonTeam.js';
@@ -10,6 +11,7 @@ getJSONTeam();
 displaySections();
 togglePassword();
 displayContainers();
+authentication();
 
 $(document).ready(function(){
     $('.container-carousel').slick({
