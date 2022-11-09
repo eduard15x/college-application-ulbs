@@ -43,6 +43,7 @@ const authentication = function() {
             username: username.val(),
             email: email.val(),
             password: password.val(),
+            hotelBooked: []
         };
 
         if (username.val() === '' || email.val() === '' || password.val() === '') {
@@ -93,7 +94,7 @@ const authentication = function() {
             alert('Welcome');
             showContainers();
             console.log(currentUser);
-            userLoggedIn.text(`Hello, ${loginUsername.val()}!`);
+            userLoggedIn.text(loginUsername.val());
 
             
             console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)

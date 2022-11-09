@@ -4,6 +4,7 @@ import {getJSONHotels} from './data/getJsonHotels.js';
 import { getJSONTeam } from './data/getJsonTeam.js';
 import {displaySections, togglePassword} from './account/myAccount.js';
 import { displayContainers } from './manipulate/displayContainers.js';
+import { showReservations } from './manipulate/showReservations.js';
 
 toggleMenuBurger();
 getJSONHotels();
@@ -12,6 +13,7 @@ displaySections();
 togglePassword();
 displayContainers();
 authentication();
+showReservations();
 
 $(document).ready(function(){
     $('.container-carousel').slick({
