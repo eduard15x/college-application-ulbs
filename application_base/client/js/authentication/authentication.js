@@ -44,7 +44,6 @@ const authentication = function() {
             email: email.val(),
             password: password.val(),
         };
-        let checkUserExists = '';
 
         if (username.val() === '' || email.val() === '' || password.val() === '') {
             alert('Form is incomplete!');
@@ -52,25 +51,27 @@ const authentication = function() {
             if (localStorage.getItem('users') === null) {
                 currentUser.push(allUsers);
                 localStorage.setItem('users', JSON.stringify(currentUser));
+                alert('Account created!');
+                location.reload();
             }  else {
                 currentUser = JSON.parse(localStorage.getItem('users'));
-                currentUser.push(allUsers);
-                localStorage.setItem('users', JSON.stringify(currentUser));
+                const checkUsernameExists = element => element.username === username.val();
+                const checkEmailExists = element => element.email === email.val();
+
+                if(currentUser.some(checkUsernameExists) === false && currentUser.some(checkEmailExists) === false) {
+                    currentUser.push(allUsers);
+                    localStorage.setItem('users', JSON.stringify(currentUser));
+                    //test
+                    console.log(currentUser.some(checkUsernameExists))
+                    console.log(currentUser.some(checkEmailExists))
+                    alert('Account created!');
+                    location.reload();
+                } else {
+                    alert('Username or email already exist');
+                    return
+                }
             }
         }
-
-        // currentUser = JSON.parse(localStorage.getItem('users'));
-        // checkUserExists = currentUser.find( el => el.username === username.val() );
-        // const checkIntro = checkUserExists.username
-
-        // if ( checkIntro === username.val()) {
-
-        //     console.log(`ttttttttttttttttt ${checkIntro}`)
-            
-        // }
-
-        delete item when match!
-
     });
 
 
@@ -108,5 +109,5 @@ const authentication = function() {
 
 }
 
-
+    
 export { authentication };
