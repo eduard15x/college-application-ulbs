@@ -89,18 +89,25 @@ const authentication = function() {
         )
         console.log(`This is finalUsers from localStorage ${filterArray}`)
         console.log(filterArray)
+        console.log(typeof(filterArray))
+        console.log(finalUsers)
+        console.log(`This is finalUsers from localStorage ${filterArray}`)
 
         if (filterArray.length > 0 && loginUsername.val() !== '' && loginEmail.val() !== '' && loginPassword.val() !== '') {
             alert('Welcome');
             showContainers();
             console.log(currentUser);
             userLoggedIn.text(loginUsername.val());
+            console.log(filterArray)
+            console.log(filterArray)
+            console.log(filterArray)
+            console.log(filterArray)
 
             
             console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
             console.log(currentUser);
         } else if (loginUsername.val() === '' || loginEmail.val() === '' || loginPassword.val() === '') {
-            alert('Complete the data')
+            alert('Complete the data!')
         } else  {
             alert('Wrong data')
             console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
