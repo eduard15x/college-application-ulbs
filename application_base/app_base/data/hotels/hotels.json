@@ -38,7 +38,7 @@
     {
         "name": "Adlon Kempinski",
         "stars": "*****",
-        "location": "Amsterdam",
+        "location": "Warsaw",
         "alt": "Adlon Kempinski hotel",
         "image": [
             "/application_base/images/hotels/amsterdam/1.jpg",
@@ -48,51 +48,99 @@
         ]
     },
     {
-        "name": "Adlon Kempinski",
+        "name": "Bellevue Palace",
         "stars": "*****",
-        "location": "Amsterdam",
-        "alt": "Adlon Kempinski hotel",
+        "location": "Bern",
+        "alt": "Bellevue Palace hotel",
         "image": [
-            "/application_base/images/hotels/amsterdam/1.jpg",
-            "/application_base/images/hotels/amsterdam/2.jpg",
-            "/application_base/images/hotels/amsterdam/3.jpg",
-            "/application_base/images/hotels/amsterdam/4.jpg"
+            "/application_base/images/hotels/bern/1.jpg",
+            "/application_base/images/hotels/bern/2.jpg",
+            "/application_base/images/hotels/bern/3.jpg",
+            "/application_base/images/hotels/bern/4.jpg"
         ]
     },
     {
-        "name": "Adlon Kempinski",
+        "name": "Vincci Capitol",
         "stars": "*****",
-        "location": "Amsterdam",
-        "alt": "Adlon Kempinski hotel",
+        "location": "Madrid",
+        "alt": "Vincci Capitol hotel",
         "image": [
-            "/application_base/images/hotels/amsterdam/1.jpg",
-            "/application_base/images/hotels/amsterdam/2.jpg",
-            "/application_base/images/hotels/amsterdam/3.jpg",
-            "/application_base/images/hotels/amsterdam/4.jpg"
+            "/application_base/images/hotels/madrid/1.jpg",
+            "/application_base/images/hotels/madrid/2.jpg",
+            "/application_base/images/hotels/madrid/3.jpg",
+            "/application_base/images/hotels/madrid/4.jpg"
         ]
     },
     {
-        "name": "Adlon Kempinski",
+        "name": "Europa Royale",
         "stars": "*****",
-        "location": "Amsterdam",
-        "alt": "Adlon Kempinski hotel",
+        "location": "Bucharest",
+        "alt": "Europa Royale hotel",
         "image": [
-            "/application_base/images/hotels/amsterdam/1.jpg",
-            "/application_base/images/hotels/amsterdam/2.jpg",
-            "/application_base/images/hotels/amsterdam/3.jpg",
-            "/application_base/images/hotels/amsterdam/4.jpg"
+            "/application_base/images/hotels/bucharest/1.jpg",
+            "/application_base/images/hotels/bucharest/2.jpg",
+            "/application_base/images/hotels/bucharest/3.jpg",
+            "/application_base/images/hotels/bucharest/4.jpg"
         ]
     },
     {
-        "name": "Adlon Kempinski",
+        "name": "Melia Vienna",
         "stars": "*****",
-        "location": "Amsterdam",
-        "alt": "Adlon Kempinski hotel",
+        "location": "Vienna",
+        "alt": "Melia Vienna hotel",
         "image": [
-            "/application_base/images/hotels/amsterdam/1.jpg",
-            "/application_base/images/hotels/amsterdam/2.jpg",
-            "/application_base/images/hotels/amsterdam/3.jpg",
-            "/application_base/images/hotels/amsterdam/4.jpg"
+            "/application_base/images/hotels/vienna/1.jpg",
+            "/application_base/images/hotels/vienna/2.jpg",
+            "/application_base/images/hotels/vienna/3.jpg",
+            "/application_base/images/hotels/vienna/4.jpg"
+        ]
+    },
+    {
+        "name": "Sofitel Warsaw",
+        "stars": "*****",
+        "location": "Warsaw",
+        "alt": "Sofitel Warsaw hotel",
+        "image": [
+            "/application_base/images/hotels/warsaw/1.jpg",
+            "/application_base/images/hotels/warsaw/2.jpg",
+            "/application_base/images/hotels/warsaw/3.jpg",
+            "/application_base/images/hotels/warsaw/4.jpg"
+        ]
+    },
+    {
+        "name": "The Emblem Prague",
+        "stars": "*****",
+        "location": "Prague",
+        "alt": "The Emblem Prague hotel",
+        "image": [
+            "/application_base/images/hotels/prague/1.jpg",
+            "/application_base/images/hotels/prague/2.jpg",
+            "/application_base/images/hotels/prague/3.jpg",
+            "/application_base/images/hotels/prague/4.jpg"
+        ]
+    },
+    {
+        "name": "J.K. Place Roma",
+        "stars": "*****",
+        "location": "Rome",
+        "alt": "J.K. Place Roma hotel",
+        "image": [
+            "/application_base/images/hotels/rome/1.jpg",
+            "/application_base/images/hotels/rome/2.jpg",
+            "/application_base/images/hotels/rome/3.jpg",
+            "/application_base/images/hotels/rome/4.jpg"
+        ]
+    },
+    {
+        "name": "Hermitage Monte-Carlo",
+        "stars": "*****",
+        "location": "Monaco",
+        "alt": "Hermitage Monte-Carlo hotel",
+        "image": [
+            "/application_base/images/hotels/monaco/1.jpg",
+            "/application_base/images/hotels/monaco/2.jpg",
+            "/application_base/images/hotels/monaco/3.jpg",
+            "/application_base/images/hotels/monaco/4.jpg"
         ]
     }
 ]
