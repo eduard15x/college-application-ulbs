@@ -4,13 +4,9 @@ const getJSONTeam = function() {
     let arrayObjectTeam = [];
 
     $.getJSON('data/team/team.json', (team) => {
-        // console.log(team); //log the team array of objects
-        // console.log(team[1]); //log the index 1 item fron 'team' array
         arrayObjectTeam.push(team);
         localStorage.setItem('teamMembers', JSON.stringify(team));
         arrayObjectTeam = JSON.parse(localStorage.getItem('teamMembers'));
-        // console.log(arrayObjectTeam); //log the team array of objects
-        // console.log(arrayObjectTeam[1]); //log the index 1 item fron 'team' array
 
         for ( let i = 0; i < arrayObjectTeam.length; i++) {
             teamList.append(
@@ -24,8 +20,8 @@ const getJSONTeam = function() {
                 </span>
                 <button class="ADD-ME" replace=${arrayObjectTeam[i].name}>BOOK NOW</button>
             </li>`
-            );
-        };
+            )
+        }
     });
 }
 

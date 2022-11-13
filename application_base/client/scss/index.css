@@ -331,7 +331,7 @@ body {
   height: 600px;
   opacity: 0.75;
 }
-.container-more-images .close-container {
+.container-more-images .close-images-modal {
   position: absolute;
   right: 20px;
   top: 10px;

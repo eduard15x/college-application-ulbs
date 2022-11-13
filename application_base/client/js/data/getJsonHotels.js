@@ -1,89 +1,92 @@
 const getJSONHotels = function() {
 
-    $.getJSON('data/hotels/hotels.json', (hotels) => {
-        for ( let i = 0; i < hotels.length; i++) {
-            let hotelList = document.querySelector('.hotels-list'); 
-            hotelList.innerHTML += `
-            <li class="hotels-list__item" title="Click for more photos">
-                <h2 class="hotels-list__item--title">${hotels[i].name}</h2>
-                <h3 class="hotels-list__item--stars">${hotels[i].stars}</h3>
-                <h3 class="hotels-list__item--location">${hotels[i].location}</h3>
-                <img src="${hotels[i].image[0]}" alt="${hotels[i].alt}">
-            </li>
-            `
-            //to use this.element you need to avoid arrow functions
-            
-            
-            // $('li').hover(
-            //     function() {$(this).animate({'opacity' : '0.5'}, 225);
-            //                 $(this).css({'box-shadow': 'none'});
-            //     },
-            //     function() {$(this).animate({'opacity': '1'}, 225);
-            //                 $(this).css({'box-shadow': '0px 0px 18px 10px #bfbfbf'});
-            //     }
-            // );
+    const hotelsList = document.querySelector('.hotels-list');
+    const modalContainer = $('.container-more-images'); //use jquery selector for easier transition
+    const modalImg = document.querySelector('.container-more-images__image');
+    const prevImg = document.querySelector('.prev-image');
+    const nextImg = document.querySelector('.next-image');
+    const closeModal = document.querySelector('.close-images-modal');
+    let indexImage = 0;
+    //setting array to store data for localStorage
+    let hotelsArray = [];
+    //use jquery for easier transition to default hide the modal for images
+    modalContainer.hide();
 
-        };
-        function displayMoreImages() {
-            let containerImage = $('.container-more-images');
-            containerImage.html(
+    fetch('data/hotels/hotels.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (hotels) {
+
+            //assing to hotelsArray all data from 'hotels' -> send data in localStorage => parse data from localStorage in hotelsArray
+            hotelsArray.push(hotels);
+            localStorage.setItem('hotelsList', JSON.stringify(hotels));
+            hotelsArray = JSON.parse(localStorage.getItem('hotelsList'));
+
+            //render hotels on page, in my 'hotelsList' ul
+            for (let i = 0; i < hotelsArray.length; i++) {
+                hotelsList.innerHTML += `
+                <li class="hotels-list__item" title="Click for more photos">
+                    <h2 class="hotels-list__item--title">${hotelsArray[i].name}</h2>
+                    <h3 class="hotels-list__item--stars">${hotelsArray[i].stars}</h3>
+                    <h3 class="hotels-list__item--location">${hotelsArray[i].location}</h3>
+                    <img class="hotels-list__item--img" src="${hotelsArray[i].image[0]}" alt="${hotelsArray[i].alt}">
+                    <button class="Book-Now" data-name="${hotelsArray[i].name}">Book now</button> 
+                </li>
                 `
-                <p class="prev-image"><</p>
-                <img src="" class="container-more-images__image">
-                <p class="next-image">></p>
-                <p class="close-container">X</p>
-                `
-            )
+            }
+
+            //Getting the collection of NodeList
+            const hotelsFromList= document.querySelectorAll('.hotels-list__item');
             
-            let src = ''
-            let imgDetail = $('.container-more-images__image');
-            
-            let prevImg = $('.prev-image');
-            let nextImg = $('.next-image');
-            let closeContainer = $('.close-container'); 
-            containerImage.hide()
-
-            closeContainer.click(() => {
-                containerImage.hide(500)
-                indexImage = 0
-            })
-  
-            let indexImage = 0;
-            let liItems = $('.hotels-list__item');
-            //function for every li to display more images base on its index
-
-            console.log(liItems)
-            console.log(liItems.length)
-
-            liItems.each(function(index) {
-                $(this).on('click', function() {
-                    indexImage = 0
-                    imgDetail.attr('src', hotels[index].image[indexImage])
-                    containerImage.show(500)
-                    
-                    console.log('function' + ' ' + index)
-                    console.log(indexImage)
-                    
-                    console.log(imgDetail.attr('src'))
-
-                    nextImg.on('click', function() {
-                        indexImage++;
-                        if ( indexImage === 4) {
-                            indexImage = 0
-                        };
-                    imgDetail.attr('src', hotels[index].image[indexImage])
-                    console.log('function' + ' ' + index)
-                    console.log(indexImage)
-                    })
+            //Create function for each li-item to open modal with specific data
+            hotelsFromList.forEach( (element, index) => {
+                element.addEventListener('click', () => {
+                    indexImage = 0;
+                    modalImg.setAttribute('src', hotelsArray[index].image[indexImage]);
+                    modalImg.setAttribute('data-index', index);
+                    modalContainer.show(500);
                 })
+            });
 
-                
-            })
-        }
+            //Event for 'prev' button -> prev image
+            prevImg.addEventListener('click', () => {
+                indexImage--;
+                if( indexImage == -1) { indexImage = 3 }
+                const currentLiIndex = document.querySelector('.container-more-images__image').getAttribute('data-index');
+                modalImg.setAttribute('src', hotelsArray[currentLiIndex].image[indexImage]);
+            });
 
-        displayMoreImages();  
-    })
-    
+            //Event for 'next' button -> next image
+            nextImg.addEventListener('click', () => {
+                indexImage++;
+                if ( indexImage == 4) { indexImage = 0 }
+                const currentLiIndex = document.querySelector('.container-more-images__image').getAttribute('data-index');
+                modalImg.setAttribute('src', hotelsArray[currentLiIndex].image[indexImage]);
+            });
+
+            //Event for 'close' button -> close modal on click
+            closeModal.addEventListener('click', () => {
+                modalContainer.hide(500)
+            });
+
+            //Event for modal -> close modal on pressing ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.which === 27) {
+                    modalContainer.hide(500);
+                }
+            });
+
+            //Short animation when you hover on a li-item
+            $('.hotels-list__item').hover(
+                function() {
+                    $(this).css({'box-shadow': '0px 0px 20px 12px #3f5561'});
+                },
+                function() {
+                    $(this).css({'box-shadow': '0px 0px 18px 10px #bfbfbf'});
+                }
+            );
+        })
 }
 
 export {getJSONHotels};

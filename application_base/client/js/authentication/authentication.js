@@ -23,19 +23,16 @@ const authentication = function() {
         mainContainer.hide();
         footerContainer.hide();    
         authenticationContainer.show();
-    }
+    };
 
     function showContainers() {
         headerContainer.show();
         mainContainer.show();
         footerContainer.show();
         authenticationContainer.hide();    
-    }
+    };
 
-    hideContainers()
-
-    
-    
+    hideContainers();
 
     registerUser.on('click', () => {
         let currentUsers = [];
