@@ -12,14 +12,16 @@ const getJSONHotels = function() {
             </li>
             `
             //to use this.element you need to avoid arrow functions
-            $('li').hover(
-                function() {$(this).animate({'opacity' : '0.5'}, 225);
-                            $(this).css({'box-shadow': 'none'});
-                },
-                function() {$(this).animate({'opacity': '1'}, 225);
-                            $(this).css({'box-shadow': '0px 0px 18px 10px #bfbfbf'});
-                }
-            );
+            
+            
+            // $('li').hover(
+            //     function() {$(this).animate({'opacity' : '0.5'}, 225);
+            //                 $(this).css({'box-shadow': 'none'});
+            //     },
+            //     function() {$(this).animate({'opacity': '1'}, 225);
+            //                 $(this).css({'box-shadow': '0px 0px 18px 10px #bfbfbf'});
+            //     }
+            // );
 
         };
         function displayMoreImages() {

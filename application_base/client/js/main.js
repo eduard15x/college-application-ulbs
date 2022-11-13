@@ -38,20 +38,3 @@ $(document).ready(function(){
         ]
       });
 });
-
-
-
-
-console.log('DE AICI INCEPEM');
-console.log('DE AICI INCEPEM');
-console.log('DE AICI INCEPEM');
-console.log('-');
-console.log('-');
-
-console.log('Asta este arrayObjects');
-
-console.log('-');
-console.log('-');
-console.log('AICI TERMINAM');
-console.log('AICI TERMINAM');
-console.log('AICI TERMINAM');

@@ -38,7 +38,7 @@ const authentication = function() {
     
 
     registerUser.on('click', () => {
-        let currentUser = [];
+        let currentUsers = [];
         let allUsers = {
             username: username.val(),
             email: email.val(),
@@ -50,21 +50,21 @@ const authentication = function() {
             alert('Form is incomplete!');
         } else {
             if (localStorage.getItem('users') === null) {
-                currentUser.push(allUsers);
-                localStorage.setItem('users', JSON.stringify(currentUser));
+                currentUsers.push(allUsers);
+                localStorage.setItem('users', JSON.stringify(currentUsers));
                 alert('Account created!');
                 location.reload();
             }  else {
-                currentUser = JSON.parse(localStorage.getItem('users'));
+                currentUsers = JSON.parse(localStorage.getItem('users'));
                 const checkUsernameExists = element => element.username === username.val();
                 const checkEmailExists = element => element.email === email.val();
 
-                if(currentUser.some(checkUsernameExists) === false && currentUser.some(checkEmailExists) === false) {
-                    currentUser.push(allUsers);
-                    localStorage.setItem('users', JSON.stringify(currentUser));
+                if(currentUsers.some(checkUsernameExists) === false && currentUsers.some(checkEmailExists) === false) {
+                    currentUsers.push(allUsers);
+                    localStorage.setItem('users', JSON.stringify(currentUsers));
                     //test
-                    console.log(currentUser.some(checkUsernameExists))
-                    console.log(currentUser.some(checkEmailExists))
+                    console.log(currentUsers.some(checkUsernameExists))
+                    console.log(currentUsers.some(checkEmailExists))
                     alert('Account created!');
                     location.reload();
                 } else {
@@ -75,43 +75,32 @@ const authentication = function() {
         }
     });
 
-
-    const finalUsers = JSON.parse(localStorage.getItem('users'));
-
     loginUser.on('click', () => {
         userLoggedIn.text();
-        let currentUser = [];
-        currentUser = JSON.parse(localStorage.getItem('users'));
-        const filterArray = finalUsers.filter( user => 
+        let currentUsers = [];
+        currentUsers = JSON.parse(localStorage.getItem('users'));
+        const filterArray = currentUsers.filter( user => 
             user.username === loginUsername.val()
-            && user.email === loginEmail.val() 
+            && user.email === loginEmail.val()
             && user.password === loginPassword.val()
         )
-        console.log(`This is finalUsers from localStorage ${filterArray}`)
-        console.log(filterArray)
-        console.log(typeof(filterArray))
-        console.log(finalUsers)
-        console.log(`This is finalUsers from localStorage ${filterArray}`)
+
+        console.log(currentUsers);
+        console.log(filterArray);
 
         if (filterArray.length > 0 && loginUsername.val() !== '' && loginEmail.val() !== '' && loginPassword.val() !== '') {
             alert('Welcome');
             showContainers();
-            console.log(currentUser);
             userLoggedIn.text(loginUsername.val());
-            console.log(filterArray)
-            console.log(filterArray)
-            console.log(filterArray)
-            console.log(filterArray)
+            // console.log(currentUsers);//log the array of registered users
+            // console.log(filterArray)//log the user that currently log in
 
-            
-            console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
-            console.log(currentUser);
         } else if (loginUsername.val() === '' || loginEmail.val() === '' || loginPassword.val() === '') {
-            alert('Complete the data!')
+            alert('Complete the data!');
         } else  {
-            alert('Wrong data')
-            console.log(`This is the currentUser from parsed from localStorage ${currentUser}`)
-            console.log(currentUser);
+            alert('Wrong data');
+            console.log(`This is the currentUsers from parsed from localStorage ${currentUsers}`);
+            console.log(currentUsers);
         }
     });
 

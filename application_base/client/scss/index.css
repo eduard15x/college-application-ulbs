@@ -472,6 +472,31 @@ body {
   border-radius: 50%;
 }
 
+.container-reservations {
+  padding: 0px 20px;
+}
+.container-reservations__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.container-reservations__list--item {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+.container-reservations__list--item p {
+  font-size: 22px;
+  font-weight: bold;
+  width: 20%;
+  margin-left: 15px;
+  text-align: center;
+}
+.container-reservations__list--item img {
+  width: 125px;
+}
+
 .burger-menu {
   display: none;
   position: absolute;

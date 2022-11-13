@@ -1,0 +1,36 @@
+// <ul class="container-reservations__list">
+//     <li class="container-reservations__list--item">
+//         <p>Georgiana</p>
+//         <img src="/application_base/images/team/Eduard.jpg"></img>
+//     </li>
+// </ul>
+
+
+.container-reservations {
+    padding: 0px 20px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        &--item {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            margin-bottom: 30px;
+
+            p {
+                font-size: 22px;
+                font-weight: bold;
+                width: 20%;
+                margin-left: 15px;
+                text-align: center;
+            }
+
+            img {
+                width: 125px;
+            }
+        }
+    }
+}

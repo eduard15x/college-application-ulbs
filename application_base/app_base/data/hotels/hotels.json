@@ -46,5 +46,53 @@
             "/application_base/images/hotels/amsterdam/3.jpg",
             "/application_base/images/hotels/amsterdam/4.jpg"
         ]
+    },
+    {
+        "name": "Adlon Kempinski",
+        "stars": "*****",
+        "location": "Amsterdam",
+        "alt": "Adlon Kempinski hotel",
+        "image": [
+            "/application_base/images/hotels/amsterdam/1.jpg",
+            "/application_base/images/hotels/amsterdam/2.jpg",
+            "/application_base/images/hotels/amsterdam/3.jpg",
+            "/application_base/images/hotels/amsterdam/4.jpg"
+        ]
+    },
+    {
+        "name": "Adlon Kempinski",
+        "stars": "*****",
+        "location": "Amsterdam",
+        "alt": "Adlon Kempinski hotel",
+        "image": [
+            "/application_base/images/hotels/amsterdam/1.jpg",
+            "/application_base/images/hotels/amsterdam/2.jpg",
+            "/application_base/images/hotels/amsterdam/3.jpg",
+            "/application_base/images/hotels/amsterdam/4.jpg"
+        ]
+    },
+    {
+        "name": "Adlon Kempinski",
+        "stars": "*****",
+        "location": "Amsterdam",
+        "alt": "Adlon Kempinski hotel",
+        "image": [
+            "/application_base/images/hotels/amsterdam/1.jpg",
+            "/application_base/images/hotels/amsterdam/2.jpg",
+            "/application_base/images/hotels/amsterdam/3.jpg",
+            "/application_base/images/hotels/amsterdam/4.jpg"
+        ]
+    },
+    {
+        "name": "Adlon Kempinski",
+        "stars": "*****",
+        "location": "Amsterdam",
+        "alt": "Adlon Kempinski hotel",
+        "image": [
+            "/application_base/images/hotels/amsterdam/1.jpg",
+            "/application_base/images/hotels/amsterdam/2.jpg",
+            "/application_base/images/hotels/amsterdam/3.jpg",
+            "/application_base/images/hotels/amsterdam/4.jpg"
+        ]
     }
 ]
