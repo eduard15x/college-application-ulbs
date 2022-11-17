@@ -8,28 +8,26 @@
     <link rel="stylesheet" href="/application_base/client/scss/index.css">
     <!-- Adding icons from Font Awesome Site -->
     <script src="https://kit.fontawesome.com/a7e6fe19e5.js" crossorigin="anonymous"></script>
-
     <!-- addinc slick plugin for carousel  -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
+
 <body>
     <img class="body-img" src="/application_base/images/hotels/monaco/1.jpg">
 
     <header class="container-header">
         <div class="container-header__secondary">
-            <a href="/application_base/app_base/index.html" class="container-header__secondary--a">
+            <a href="#" class="container-header__secondary--a">
                 <i class="fa-solid fa-earth-europe"></i>
                 <span class="container-header__secondary--a__span">AirULBS</span>
             </a>
         </div>
         <nav class="container-nav d-none">
             <a href="#" class="container-nav__link" id="homePage">Home</a>
-            <a href="#" class="container-nav__link" id="offersPage">Offers</a>
-            <a href="#" class="container-nav__link" id="availabilityPage">Availability</a>
             <a href="#" class="container-nav__link" id="moreDetailsPage">More details</a>
             <a href="#" class="container-nav__link" id="contactPage">Contact</a>
-            <a href="#" class="container-nav__link">Hello, <span id="userLoggedIn" class="user-span"></span>!</a>
             <a href="#" class="container-nav__link" id="reservations">Reservations</a>
+            <a href="#" class="container-nav__link">Hello, <span id="userLoggedIn" class="user-span"></span>!</a>
         </nav>
         <i class="fa-solid fa-bars burger-menu"></i>
     </header>
@@ -79,13 +77,12 @@
     </div>
 
     <main class="container-main ">
-
         <section class="container-intro-home">
             <div class="container-intro-home__details">
                 <h1>About us</h1>
                 <p>
                     Founded in 2022 in Sibiu, Romania, AirULBS website's goal is to grow from a small application to one of the world's 
-                    leading digital travel companies. The mission for this application is to make it easier for everyone to experience the 
+                    leading digital travel companies. Our mission is to make it easier for everyone to experience the 
                     world focusing on the main events of the year.
                     By investing in the technology that helps take the friction out of travel, AirULBS seamlessly connects millions 
                     of travellers with memorable experiences, a range of transport options and incredible places to stay in the best hotels
@@ -107,21 +104,61 @@
                 </div>
                 <div>
                     <img class="container-carousel--hotels" src="/application_base/images/hotels/london/1.jpg"></img>
-                    <p class="container-carousel--name">Royal Castle, London</p>
+                    <p class="container-carousel--name">Royal Lancaster, London</p>
                 </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/bern/1.jpg"></img>
+                    <p class="container-carousel--name">Bellevue Palace, Ben</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/bucharest/1.jpg"></img>
+                    <p class="container-carousel--name">Europa Royale, Bucharest</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/madrid/1.jpg"></img>
+                    <p class="container-carousel--name">Vinci Capitol, Madrid</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/prague/1.jpg"></img>
+                    <p class="container-carousel--name">The Emblem, Prague</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/monaco/1.jpg"></img>
+                    <p class="container-carousel--name">Hermitage Monte-Carlo, Monaco</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/rome/1.jpg"></img>
+                    <p class="container-carousel--name">J.K Place, Rome</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/vienna/1.jpg"></img>
+                    <p class="container-carousel--name">Melia Vienna, Vienna</p>
+                </div>
+                <div>
+                    <img class="container-carousel--hotels" src="/application_base/images/hotels/warsaw/1.jpg"></img>
+                    <p class="container-carousel--name">Sofitel, Warsaw</p>
+                </div>
+            </div>
+            <div class="purpose-of-app">
+                <p>
+                    The purpose of this application is to present people various luxury location to enjoy their stay for the New Year's Eve period.
+                </p>
+                <p>
+                    We hope you will discover something new and special. Enjoy!
+                </p>
             </div>
         </section>
 
         <section class="container-more-details">
             <p>See more details about our hotels and some photos for all of them</p>
             <ul class="hotels-list">
-                <!-- <li class="hotels-list__items"></li> -->
+                <!--JavaScript ADDED-->
             </ul>
             <div class="container-more-images">
-                <p class="prev-image"><</p>
+                <p class="prev-image"><i class="fa-solid fa-left-long"></i></p>
                 <img class="container-more-images__image" src="" >
-                <p class="next-image">></p>
-                <p class="close-images-modal">X</p>
+                <p class="next-image"><i class="fa-solid fa-right-long"></i></p>
+                <p class="close-images-modal"><i class="fa-solid fa-xmark"></i></p>
                 <!-- javascript functionality added -->
             </div>
         </section>
@@ -134,54 +171,13 @@
             </ul>
         </section>
 
-        <section class="container-offers">
-            <ul class="container-offers__list">
-                <li class="container-offers__list--item">
-                    <img src="">
-                    <img src="/application_base/images/hotels/amsterdam/1.jpg" class="">
-                    <div class=item__details>
-                        <h2>Amsterdam</h2>
-                        <p>This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. 
-                            This is a hotel in Amsterdam. This is a hotel in Amsterdam.This is a hotel in Amsterdam. This is a hotel in Amsterdam.
-                        </p>
-                    </div>
-                </li>
-                <li class="container-offers__list--item">
-                    <img src="/application_base/images/hotels/amsterdam/1.jpg" class="">
-                    <div class=item__details>
-                        <h2>Amsterdam</h2>
-                        <p>This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. This is a hotel in Amsterdam. 
-                            This is a hotel in Amsterdam. This is a hotel in Amsterdam.This is a hotel in Amsterdam. This is a hotel in Amsterdam.
-                        </p>
-                    </div>
-                </li>
-                <li class="container-offers__list--item">
-                    <img>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                    </div>
-                </li>
-                <li class="container-offers__list--item">
-                    <img>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
         <section class="container-reservations">
-            <h1>Your reservation</h1>
+            <h1 class="container-reservations__title">Your reservations</h1>
             <ul class="container-reservations__list">
                 <!-- JavaScript added -->
             </ul>
         </section>
-
     </main>
-
-
 
     <footer class="container-footer">
         <a href="/application_base/app_base/index.html" class="container-footer__logo">

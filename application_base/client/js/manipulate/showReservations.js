@@ -9,6 +9,8 @@ const showReservations = function() {
 
     const reservationsContainer = document.querySelector('.container-reservations__list');
 
+    const modalContainer = $('.container-more-images');
+
     reservations.addEventListener('click', () => {
         // console.log(loggedUser) //current user
         const loggedUser = nameCurrentUser.textContent;
@@ -37,7 +39,8 @@ const showReservations = function() {
     });
     
     document.addEventListener('click', (e) => {
-        if (e.target.className === 'Book-Now') {
+        if (e.target.className === 'Book-Now hotels-list__item--button') {
+            modalContainer.hide();
             //allHotelsArr = >  array list with all hotels
             const dataAttribute = e.target.getAttribute('data-name');
             const filterMembers = allHotelsArr.find( hotel => hotel.name === dataAttribute);

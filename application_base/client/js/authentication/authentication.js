@@ -1,5 +1,4 @@
 const authentication = function() {
-
     //user register
     let username = $('#username');
     let email = $('#user-email');
@@ -66,7 +65,6 @@ const authentication = function() {
                     location.reload();
                 } else {
                     alert('Username or email already exist');
-                    return
                 }
             }
         }
@@ -75,33 +73,32 @@ const authentication = function() {
     loginUser.on('click', () => {
         userLoggedIn.text();
         let currentUsers = [];
-        currentUsers = JSON.parse(localStorage.getItem('users'));
-        const filterArray = currentUsers.filter( user => 
-            user.username === loginUsername.val()
-            && user.email === loginEmail.val()
-            && user.password === loginPassword.val()
-        )
 
-        console.log(currentUsers);
-        console.log(filterArray);
-
-        if (filterArray.length > 0 && loginUsername.val() !== '' && loginEmail.val() !== '' && loginPassword.val() !== '') {
-            alert('Welcome');
-            showContainers();
-            userLoggedIn.text(loginUsername.val());
-            // console.log(currentUsers);//log the array of registered users
-            // console.log(filterArray)//log the user that currently log in
-
-        } else if (loginUsername.val() === '' || loginEmail.val() === '' || loginPassword.val() === '') {
-            alert('Complete the data!');
-        } else  {
+        if (localStorage.getItem('users') === null) {
             alert('Wrong data');
-            console.log(`This is the currentUsers from parsed from localStorage ${currentUsers}`);
-            console.log(currentUsers);
+
+        } else {
+            currentUsers = JSON.parse(localStorage.getItem('users'));
+            const filterArray = currentUsers.filter( user => 
+                user.username === loginUsername.val()
+                && user.email === loginEmail.val()
+                && user.password === loginPassword.val()
+            )
+    
+            if (filterArray.length > 0 && loginUsername.val() !== '' && loginEmail.val() !== '' && loginPassword.val() !== '') {
+                alert('Welcome');
+                showContainers();
+                userLoggedIn.text(loginUsername.val());
+    
+            } else if (loginUsername.val() === '' || loginEmail.val() === '' || loginPassword.val() === '') {
+                alert('Complete the data!');
+            } else  {
+                alert('Wrong datax');
+                console.log(`This is the currentUsers from parsed from localStorage ${currentUsers}`);
+                console.log(currentUsers);
+            }
         }
     });
-
 }
-
     
 export { authentication };

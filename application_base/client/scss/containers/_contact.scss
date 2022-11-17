@@ -1,19 +1,16 @@
-// `<li class="container-contact-list__item">
-//     <img src="${value.img}" alt="${value.name}" class="container-contact-list__item--img">
-//     <p class="container-contact-list__item--text">${value.name}</p>
-//     <p class="container-contact-list__item--text">${value.role}</p>
-//     <span class="container-contact-list__item--span"> 
-//         <a href="mailto:${value.mail}"><i class="fa-regular fa-envelope"></i></a> 
-//         <a href="tel:${value.tel}"><i class="fa-solid fa-phone"></i></a> 
-//     </span>
-// </li>`
-
 .container-contact {
 
     &--intro {
         text-align: center;
         font-size: 24px;
         line-height: 175%;
+
+        @include breakpoint(mobile) {
+            text-align: center;
+            font-size: 20px;
+            line-height: 150%;
+            padding: 0px 15px;
+        }
     }
 }
 
@@ -22,6 +19,15 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 35px;
+    width: 75%;
+    margin: auto;
+
+    @include breakpoint(mobile) {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     &__item {
         display: flex;
@@ -31,12 +37,22 @@
         border-radius: 10px;
         margin: 25px 50px;
         padding: 25px;
-        width: 20%;
+        width: 30%;
         background: linear-gradient(180deg, rgb(207, 207, 214) 0%, rgba(244,236,236,1) 50%);
+
+        @include breakpoint(mobile) {
+            width: 75%;
+            padding: 10px;
+            margin: 20px 0px;
+        }
 
         &--img {
             margin-bottom: 12px;
             box-shadow: 0px 0px 10px 4px darkgray;
+
+            @include breakpoint(mobile) {
+                box-shadow: none
+            }
         }
 
         &--text {
@@ -59,11 +75,16 @@
             }
         }
     }
-
 }
-
 
 .container-contact-list__item--img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
+
+    @include breakpoint(mobile) {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
 }

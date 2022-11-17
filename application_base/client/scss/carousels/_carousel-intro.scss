@@ -1,8 +1,3 @@
-//Hide prev/next slider arrows/buttons
-// .slick-arrow {
-//     display: none !important;
-// }
-
 .container-carousel {
     @include breakpoint(desktop) {
         padding: 0px 30px;

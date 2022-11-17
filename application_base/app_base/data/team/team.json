@@ -1,7 +1,7 @@
 [
     {
         "name": "Eduard",
-        "role": "Support - Accomodations",
+        "role": "Support - Spain",
         "mail": "airulbs@bookwithus.com",
         "tel": "+40743224090",
         "img": "/application_base/images/team/Eduard.jpg"
@@ -10,28 +10,21 @@
         "name": "Georgiana",
         "role": "Support - Germany",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090",
-        "img": "/application_base/images/team/Eduard.jpg"
-    },
-    {
-        "name": "Octavian",
-        "role": "Support - Hungary",
-        "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090",
-        "img": "/application_base/images/team/Eduard.jpg"
-    },
-    {
-        "name": "Simona",
-        "role": "Support - United Kingdon",
-        "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090",
-        "img": "/application_base/images/team/Eduard.jpg"
+        "tel": "+0740485841",
+        "img": "/application_base/images/team/Georgiana.jpg"
     },
     {
         "name": "Valentin",
+        "role": "Support - United Kingdon",
+        "mail": "airulbs@bookwithus.com",
+        "tel": "+0747565544",
+        "img": "/application_base/images/team/Valentin.jpg"
+    },
+    {
+        "name": "Simona",
         "role": "Support - Netherlands",
         "mail": "airulbs@bookwithus.com",
-        "tel": "+40743224090",
-        "img": "/application_base/images/team/Eduard.jpg"
+        "tel": "+0771325767",
+        "img": "/application_base/images/team/Simona.jpg"
     }
 ]

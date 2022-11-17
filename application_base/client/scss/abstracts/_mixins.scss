@@ -4,8 +4,6 @@ $tablet: 480px;
 $desktop: 900px;
 $desktopLarge: 1600px;
 
-
-
 //Creating the variables:
 @mixin breakpoint($point) {
     //for mobile layouts

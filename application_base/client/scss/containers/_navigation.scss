@@ -4,20 +4,21 @@
     align-items: center;
     justify-content: center;
     background-color: $nav-color;
-    height: 60px;
+    height: 65px;
 
     @include breakpoint(mobile) {
         flex-direction: column;
         justify-content: flex-start;
         width: 50%;    
         min-width: 180px;
-        background-color: $nav-color;
-        height: 100vh;
+        background-color: #dbdbdb;
+        height: 300px;
         padding-top: 35px;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 9;
+        z-index: 1;
+        border: 1px solid #c6c6c6;
     }
 
     @include breakpoint(tablet) {
@@ -36,22 +37,29 @@
     &__link {
         margin: 14px 0px;
         font-size: 16px;
-        color: whitesmoke;
+        color: $nav-color;
+        font-weight: bold;
         text-align: center;
         border-bottom: 1px ridge lightsteelblue;
         width: 75%;
         padding-bottom: 8px;
+        
+        &:last-child {
+            border-bottom: none;
+        }
 
         @include breakpoint(desktop) {
-            margin: 0px 20px;
-            font-size: 18px;
+            margin: 0px 40px;
+            font-size: 20px;
             border: none;
             width: auto;
             padding-bottom: 0px;
+            color: whitesmoke;
+            font-weight: normal;
         }
 
         &:hover {
-            color: lightgray;
+            color: #83a0d4;
         }
     }
 }

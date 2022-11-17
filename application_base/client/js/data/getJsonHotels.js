@@ -31,7 +31,7 @@ const getJSONHotels = function() {
                     <h3 class="hotels-list__item--stars">${hotelsArray[i].stars}</h3>
                     <h3 class="hotels-list__item--location">${hotelsArray[i].location}</h3>
                     <img class="hotels-list__item--img" src="${hotelsArray[i].image[0]}" alt="${hotelsArray[i].alt}">
-                    <button class="Book-Now" data-name="${hotelsArray[i].name}">Book now</button> 
+                    <button class="Book-Now hotels-list__item--button" data-name="${hotelsArray[i].name}" title="Click to book">Book now</button> 
                 </li>
                 `
             }
@@ -41,12 +41,12 @@ const getJSONHotels = function() {
             
             //Create function for each li-item to open modal with specific data
             hotelsFromList.forEach( (element, index) => {
-                element.addEventListener('click', () => {
-                    indexImage = 0;
-                    modalImg.setAttribute('src', hotelsArray[index].image[indexImage]);
-                    modalImg.setAttribute('data-index', index);
-                    modalContainer.show(500);
-                })
+                    element.addEventListener('click', () => {
+                        indexImage = 0;
+                        modalImg.setAttribute('src', hotelsArray[index].image[indexImage]);
+                        modalImg.setAttribute('data-index', index);
+                        modalContainer.show(500);
+                    })
             });
 
             //Event for 'prev' button -> prev image

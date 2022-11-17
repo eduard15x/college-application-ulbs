@@ -18,7 +18,6 @@ const getJSONTeam = function() {
                     <a href="mailto:${arrayObjectTeam[i].mail}"><i class="fa-regular fa-envelope"></i></a> 
                     <a href="tel:${arrayObjectTeam[i].tel}"><i class="fa-solid fa-phone-volume"></i></a> 
                 </span>
-                <button class="ADD-ME" replace=${arrayObjectTeam[i].name}>BOOK NOW</button>
             </li>`
             )
         }

@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    
+    @include breakpoint(mobile) {
+        padding-top: 330px;
+    }
 
     &__row {
         font-size: 20px;
@@ -12,6 +16,7 @@
             font-size: 50px;
 
             @include breakpoint(mobile) {
+                margin: 10px 0px;
                 font-size: 28px;
             }
         }
@@ -36,6 +41,10 @@
             font-size: 16px;
             text-transform:uppercase;
             margin: 16px 0px 2px 0px;
+
+            @include breakpoint(mobile) {
+            margin: 20px 0px 5px 0px;
+            }
         }
 
         input {
@@ -66,7 +75,6 @@
     }
 }
 
-
 .password-box {
     display: flex;
     align-items: center;
@@ -83,8 +91,27 @@
 .intro-title-and-logo {
     position: absolute;
     color: rgb(27, 27, 27);
-    bottom: 50px;
-    font-size: 80px;
+    bottom: 75px;
+    font-size: 75px;
     text-align: center;
-    text-shadow: 3px 6px 9px rgba(0,0,0,0.61);
+    text-shadow: 3px 6px 9px rgba(0,0,0,0.75);
+
+    @include breakpoint(mobile) {
+        top: 10px;
+        bottom: auto;
+        font-size: 35px;
+        text-shadow: 1px 3px 10px rgba(0,0,0,0.75);
+    }
+}
+
+.body-img {
+    width: 100%;
+    background-size: cover;
+    opacity: 0.55;
+    position: fixed;
+    z-index: -1;
+
+    @include breakpoint(mobile) {
+        opacity: 0.65;
+    }
 }

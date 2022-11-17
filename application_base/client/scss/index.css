@@ -8,26 +8,21 @@
 
 body {
   overflow: visible;
-}
-
-.body-img {
-  width: 100%;
-  background-size: cover;
-  opacity: 0.65;
-  position: fixed;
-  z-index: -1;
+  background-color: whitesmoke;
 }
 
 .container-header__secondary {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 32px;
+  height: 36px;
   background-color: #0153a0;
+  z-index: 2;
+  position: relative;
 }
 @media (min-width: 900px) {
   .container-header__secondary {
-    height: 40px;
+    height: 60px;
     background-color: whitesmoke;
   }
 }
@@ -55,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #0153a0;
-  height: 60px;
+  height: 65px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container-nav {
@@ -63,13 +58,14 @@ body {
     justify-content: flex-start;
     width: 50%;
     min-width: 180px;
-    background-color: #0153a0;
-    height: 100vh;
+    background-color: #dbdbdb;
+    height: 300px;
     padding-top: 35px;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 9;
+    z-index: 1;
+    border: 1px solid #c6c6c6;
   }
 }
 @media (min-width: 480px) and (max-width: 900px) {
@@ -89,23 +85,29 @@ body {
 .container-nav__link {
   margin: 14px 0px;
   font-size: 16px;
-  color: whitesmoke;
+  color: #0153a0;
+  font-weight: bold;
   text-align: center;
   border-bottom: 1px ridge lightsteelblue;
   width: 75%;
   padding-bottom: 8px;
 }
+.container-nav__link:last-child {
+  border-bottom: none;
+}
 @media (min-width: 900px) {
   .container-nav__link {
-    margin: 0px 20px;
-    font-size: 18px;
+    margin: 0px 40px;
+    font-size: 20px;
     border: none;
     width: auto;
     padding-bottom: 0px;
+    color: whitesmoke;
+    font-weight: normal;
   }
 }
 .container-nav__link:hover {
-  color: lightgray;
+  color: #83a0d4;
 }
 
 .d-none {
@@ -120,6 +122,7 @@ body {
 .container-main {
   background-color: rgb(224, 224, 224);
   padding: 30px 0px 70px 0px;
+  min-height: 100vh;
 }
 .container-main--is-hidden {
   display: none;
@@ -129,12 +132,38 @@ body {
   text-align: center;
   font-size: 28px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-intro-home__details h1 {
+    font-size: 22px;
+  }
+}
 .container-intro-home__details p {
   text-align: justify;
   padding: 0px 75px;
   margin: 30px 0px 60px 0px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 175%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-intro-home__details p {
+    font-size: 16px;
+    padding: 0px 25px;
+    margin: 20px 0px 40px 0px;
+  }
+}
+.container-intro-home .purpose-of-app {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 70px;
+  line-height: 175%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-intro-home .purpose-of-app {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 150%;
+    padding: 0px 25px;
+  }
 }
 
 .container-footer {
@@ -146,7 +175,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 20px;
 }
 .container-footer__logo {
   color: whitesmoke;
@@ -182,6 +211,11 @@ body {
   justify-content: center;
   margin: auto;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-account {
+    padding-top: 330px;
+  }
+}
 .container-account__row {
   font-size: 20px;
 }
@@ -192,6 +226,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container-account__row--title {
+    margin: 10px 0px;
     font-size: 28px;
   }
 }
@@ -213,6 +248,11 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   margin: 16px 0px 2px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-account__form label {
+    margin: 20px 0px 5px 0px;
+  }
 }
 .container-account__form input {
   font-size: 14px;
@@ -253,14 +293,42 @@ body {
 .intro-title-and-logo {
   position: absolute;
   color: rgb(27, 27, 27);
-  bottom: 50px;
-  font-size: 80px;
+  bottom: 75px;
+  font-size: 75px;
   text-align: center;
-  text-shadow: 3px 6px 9px rgba(0, 0, 0, 0.61);
+  text-shadow: 3px 6px 9px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .intro-title-and-logo {
+    top: 10px;
+    bottom: auto;
+    font-size: 35px;
+    text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.body-img {
+  width: 100%;
+  background-size: cover;
+  opacity: 0.55;
+  position: fixed;
+  z-index: -1;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .body-img {
+    opacity: 0.65;
+  }
 }
 
 .container-more-details {
   text-align: center;
+  font-size: 24px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-details {
+    font-size: 20px;
+    padding: 0px 12px;
+  }
 }
 
 .hotels-list {
@@ -269,11 +337,17 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin-top: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list {
+    margin-top: 0px;
+  }
 }
 .hotels-list__item {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 25%;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
@@ -282,32 +356,92 @@ body {
   box-shadow: 0px 0px 18px 10px #bfbfbf;
   cursor: pointer;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item {
+    width: 100%;
+    margin: 18px;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+}
 .hotels-list__item--title {
   font-size: 24px;
   margin: 12px 0px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item--title {
+    font-size: 18px;
+    margin: 8px 0px 4px 0px;
+  }
+}
 .hotels-list__item--stars {
   font-size: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item--stars {
+    font-size: 22px;
+  }
 }
 .hotels-list__item--location {
   font-size: 20px;
   margin-bottom: 20px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item--location {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
 .hotels-list__item img {
-  width: 600px;
-  height: 350px;
-  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item img {
+    width: 100%;
+    height: 220px;
+  }
+}
+.hotels-list__item--button {
+  margin: 20px 0px;
+  background-color: #cccccc;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+.hotels-list__item--button:hover {
+  background-color: #a7a7a7;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .hotels-list__item--button {
+    margin: 15px 0px;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 5px 20px;
+  }
 }
 
 .container-more-images {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  height: 100vh;
   background-color: black;
-  width: 75%;
-  border-radius: 15px;
-  z-index: 9999;
+  width: 100%;
+  z-index: 10;
+  padding-top: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images {
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0;
+    padding-top: 100px;
+  }
 }
 .container-more-images .prev-image,
 .container-more-images .next-image {
@@ -320,115 +454,62 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images .prev-image,
+.container-more-images .next-image {
+    font-size: 40px;
+    top: 85%;
+    transform: none;
+  }
+}
 .container-more-images .prev-image {
   left: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images .prev-image {
+    left: 30%;
+  }
 }
 .container-more-images .next-image {
   right: 20px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images .next-image {
+    right: 30%;
+  }
+}
 .container-more-images img {
-  width: 85%;
-  height: 600px;
+  width: 90%;
+  height: 900px;
   opacity: 0.75;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images img {
+    width: 100%;
+    height: 550px;
+    opacity: 0.9;
+  }
 }
 .container-more-images .close-images-modal {
   position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 30px;
+  right: 30px;
+  top: 20px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
   cursor: pointer;
   z-index: 99999;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-more-images .close-images-modal {
+    right: 30px;
+    top: 25px;
+    font-size: 25px;
+  }
+}
 
-.container-offers__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container-offers__list--item {
-  border: 10px solid black;
-  width: 80%;
-  background-color: blueviolet;
-  display: flex;
-  height: 300px;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-offers__list--item {
-    flex-direction: column;
-    height: auto;
-    width: 90%;
-  }
-}
-@media (min-width: 480px) and (max-width: 900px) {
-  .container-offers__list--item {
-    flex-direction: column;
-    height: auto;
-    width: 80%;
-  }
-}
-.container-offers__list--item img {
-  width: 500px;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-offers__list--item img {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 480px) and (max-width: 900px) {
-  .container-offers__list--item img {
-    width: 100%;
-    height: auto;
-  }
-}
-.container-offers__list--item .item__details {
-  margin: 0px 50px;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-offers__list--item .item__details {
-    margin: 15px 10px;
-  }
-}
-@media (min-width: 480px) and (max-width: 900px) {
-  .container-offers__list--item .item__details {
-    margin: 20px;
-  }
-}
-.container-offers__list--item .item__details h2 {
-  margin: 20px 0px;
-  text-align: center;
-  font-size: 24px;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-offers__list--item .item__details h2 {
-    margin: 10px;
-    font-size: 20px;
-  }
-}
-@media (min-width: 480px) and (max-width: 900px) {
-  .container-offers__list--item .item__details h2 {
-    margin: 15px;
-    font-size: 22px;
-  }
-}
-.container-offers__list--item .item__details p {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 165%;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .container-offers__list--item .item__details p {
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-@media (min-width: 480px) and (max-width: 900px) {
-  .container-offers__list--item .item__details p {
-    font-size: 18px;
-    line-height: 160%;
-  }
+.user-span {
+  font-weight: bold;
 }
 
 .container-contact--intro {
@@ -436,12 +517,30 @@ body {
   font-size: 24px;
   line-height: 175%;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-contact--intro {
+    text-align: center;
+    font-size: 20px;
+    line-height: 150%;
+    padding: 0px 15px;
+  }
+}
 
 .container-contact-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 35px;
+  width: 75%;
+  margin: auto;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-contact-list {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .container-contact-list__item {
   display: flex;
@@ -451,12 +550,24 @@ body {
   border-radius: 10px;
   margin: 25px 50px;
   padding: 25px;
-  width: 20%;
+  width: 30%;
   background: linear-gradient(180deg, rgb(207, 207, 214) 0%, rgb(244, 236, 236) 50%);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-contact-list__item {
+    width: 75%;
+    padding: 10px;
+    margin: 20px 0px;
+  }
 }
 .container-contact-list__item--img {
   margin-bottom: 12px;
   box-shadow: 0px 0px 10px 4px darkgray;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-contact-list__item--img {
+    box-shadow: none;
+  }
 }
 .container-contact-list__item--text {
   font-size: 18px;
@@ -477,32 +588,97 @@ body {
 
 .container-contact-list__item--img {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-contact-list__item--img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
 }
 
 .container-reservations {
   padding: 0px 20px;
 }
+.container-reservations__title {
+  font-size: 24px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__title {
+    font-size: 20px;
+  }
+}
 .container-reservations__list {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  width: 50%;
+  justify-content: center;
+  margin: 30px auto;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__list {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 .container-reservations__list--item {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  border-radius: 5px;
   margin-bottom: 30px;
+  justify-content: space-around;
+  background-color: #e9e9e9;
+  border: 2px solid #a7a7a7;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__list--item {
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 8px 0px 12px 0px;
+  }
 }
 .container-reservations__list--item p {
   font-size: 22px;
+  width: 30%;
   font-weight: bold;
-  width: 20%;
-  margin-left: 15px;
   text-align: center;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__list--item p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
 .container-reservations__list--item img {
-  width: 125px;
+  width: 150px;
+  height: 100px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__list--item img {
+    margin: 20px 0px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+  }
+}
+.container-reservations__list--item .REMOVE-ME {
+  font-size: 16px;
+  color: whitesmoke;
+  border: none;
+  background-color: #0153a0;
+  padding: 6px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container-reservations__list--item .REMOVE-ME:hover {
+  background-color: blue;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-reservations__list--item .REMOVE-ME {
+    font-size: 14px;
+  }
 }
 
 .burger-menu {
@@ -565,8 +741,4 @@ body {
   margin: 12px;
   font-size: 18px;
   font-weight: bold;
-}
-
-d-none {
-  display: none !important;
 }/*# sourceMappingURL=index.css.map */
