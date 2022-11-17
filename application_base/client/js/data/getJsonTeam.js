@@ -3,7 +3,7 @@ const getJSONTeam = function() {
     let teamList = $('.container-contact-list');
     let arrayObjectTeam = [];
 
-    $.getJSON('data/team/team.json', (team) => {
+    $.getJSON('app_base/data/team/team.json', (team) => {
         arrayObjectTeam.push(team);
         localStorage.setItem('teamMembers', JSON.stringify(team));
         arrayObjectTeam = JSON.parse(localStorage.getItem('teamMembers'));

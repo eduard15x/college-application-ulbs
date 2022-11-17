@@ -12,7 +12,7 @@ const getJSONHotels = function() {
     //use jquery for easier transition to default hide the modal for images
     modalContainer.hide();
 
-    fetch('data/hotels/hotels.json')
+    fetch('app_base/data/hotels/hotels.json')
         .then(function (response) {
             return response.json();
         })
